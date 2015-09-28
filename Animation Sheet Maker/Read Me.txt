@@ -1,0 +1,58 @@
+#==============================================================================
+# ** Animation Sheet Maker
+#------------------------------------------------------------------------------
+# by Fantasist
+# Version: 1.0
+# Date: 11-Mar-2009
+#------------------------------------------------------------------------------
+# Version History:
+#
+#   1.0 - First version
+#------------------------------------------------------------------------------
+# Description:
+#
+#     This script can read image files from a folder and compile them into an
+#   animation sheet for use with RMXP/RMVX.
+#------------------------------------------------------------------------------
+# Compatibility:
+#
+#   Needs file writing permissions to save the temporary and output files.
+#------------------------------------------------------------------------------
+# Instructions:
+#
+#    - Put all the frames of one animation in a folder and paste it in the
+#      program's directory.
+#    - Include the names of the folders in quotes in the "Config.txt" file.
+#    - Run "MakeAnimSheet.exe" and wait.
+#
+#   NOTE: The contents of Config.txt will be directly loaded, so do not make
+#         errors of any sort. Include the folder names in the "List" array.
+#
+#   Example:
+#
+#         List = [ 'Animation1', 'folder2', 'anim' ]
+#------------------------------------------------------------------------------
+# Issues:
+#
+#     If this script is used with RMXP, there is a chance of the game freezing
+#   with a "Script is hanging" error. Use this with RMVX to avoid the problem.
+#------------------------------------------------------------------------------
+# Credits and Thanks:
+#
+#   Fantasist - For making this.
+#   www.66rpg.com - For the PNG output script.
+#   Viviatus - For requesting this.
+#------------------------------------------------------------------------------
+# Notes:
+#
+#     You should find the program where you found this script. It is
+#   recommended that you use the program, since it is minimal and prevents a
+#   possible crash (when used in RMXP).
+#
+#   If you have any questions, suggestions or comments, you can find me at:
+#
+#    - www.chaos-project.com
+#    - www.quantumcore.forumotion.com
+#
+#   Enjoy ^_^
+#==============================================================================

@@ -1,0 +1,2003 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="[XP] Transition Pack v1.1">
+	<meta name="keywords" content="Chaos Project, Blizz-ABS, best ABS, Tons of Add-ons, RPG Maker XP, RPG Maker, RMXP, RMVX, RPG Maker VX, RGSS, RGSS2, Ruby, RGSS Ruby, RGSS2 Ruby, RGSS Scripts, RGSS2 Scripts, Blizzard, The Legend of Lexima, Lexima, Chaos, XP, Transition, Pack, v1.1, Authors, Fantasist, Version, 1.1, Type, Eye, Candy, Key, Term, Misc, System, Introduction, This, script, adds, some, exotic, transitions, which, can't, be, attained, by, regular, transition, graphics, Features, Exotic, for, special, occasions, in, your, game, Easily, extendable, Screenshots, You, appreciate, the, effects, as, screenshots, just, try, demo, Demo, http://www.sendspace.com/file/yjd54h, ~243, KB, click, to, show/hide, http://www.sendspace.com/file/tlc19a, v1.0, http://www.sendspace.com/file/kmy8mt, http://www.sendspace.com/file/pfd2h7, Thanks, shdwlink, keeping, this, long!, Script, Place, below, Scene_Debug, and, above, Main, Code, #==============================================================================, #, **, #------------------------------------------------------------------------------, Date, 23-August-2009, History, #&nbsp;, &nbsp;1.0, -, First, released, version, &nbsp;1.1, Added, code, make, battle, scene, use, Description, &nbsp;, &nbsp;This, &nbsp;regular, Compatibility">
+	<script language="JavaScript" type="text/javascript" src="index.php_files/script.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.chaos-project.com/Themes/ChaosTrue5";
+		var smf_images_url = "http://forum.chaos-project.com/Themes/ChaosTrue5/images";
+		var smf_scripturl = "http://forum.chaos-project.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+	// ]]></script>
+	<title>[XP] Transition Pack v1.1</title>
+	<link rel="stylesheet" type="text/css" href="index.php_files/style.css">
+	<link rel="stylesheet" type="text/css" href="index.php_files/print.css" media="print">
+	<link rel="help" href="http://forum.chaos-project.com/index.php?action=help" target="_blank">
+	<link rel="search" href="http://forum.chaos-project.com/index.php?action=search">
+	<link rel="contents" href="http://forum.chaos-project.com/index.php">
+	<link rel="alternate" type="application/rss+xml" title="Chaos Project - RSS" href="http://forum.chaos-project.com/index.php?type=rss;action=.xml">
+	<link rel="prev" href="http://forum.chaos-project.com/index.php/topic,1390.0/prev_next,prev.html">
+	<link rel="next" href="http://forum.chaos-project.com/index.php/topic,1390.0/prev_next,next.html">
+	<link rel="index" href="http://forum.chaos-project.com/index.php/board,12.0.html"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			smf_setThemeOption("collapse_header", mode ? 1 : 0, null, "2eb3680a2d038bdb9bf6452e261a4814");
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+			document.getElementById("upshrinkHeader2").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			var current_header_sb = false;
+
+			function shrinkHeaderSB(mode)
+			{
+				smf_setThemeOption("collapse_header_sb", mode ? 1 : 0, null, "2eb3680a2d038bdb9bf6452e261a4814");
+				if (mode)
+				{
+					document.getElementById("upshrink_sbL").src = smf_images_url + "/cat-expandL.gif";
+					document.getElementById("upshrink_sbR").src = smf_images_url + "/cat-expandR.gif";
+					document.getElementById("upshrinkHeaderSB").style.display = "none";
+				}
+				else
+				{
+					document.getElementById("upshrink_sbL").src = smf_images_url + "/cat-collapseL.gif";
+					document.getElementById("upshrink_sbR").src = smf_images_url + "/cat-collapseR.gif";
+					document.getElementById("upshrinkHeaderSB").style.display = "";
+				}
+				current_header_sb = mode;
+			}
+		// ]]></script>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			var current_header_ic = false;
+
+			function shrinkHeaderIC(mode)
+			{
+				smf_setThemeOption("collapse_header_ic", mode ? 1 : 0, null, "2eb3680a2d038bdb9bf6452e261a4814");
+				if (mode)
+				{
+					document.getElementById("upshrink_icL").src = smf_images_url + "/cat-expandL.gif";
+					document.getElementById("upshrink_icR").src = smf_images_url + "/cat-expandR.gif";
+					document.getElementById("upshrinkHeaderIC").style.display = "none";
+				}
+				else
+				{
+					document.getElementById("upshrink_icL").src = smf_images_url + "/cat-collapseL.gif";
+					document.getElementById("upshrink_icR").src = smf_images_url + "/cat-collapseR.gif";
+					document.getElementById("upshrinkHeaderIC").style.display = "";
+				}
+				current_header_ic = mode;
+			}
+		// ]]></script>
+</head><body>
+  <div id="wrapper">
+	<div id="top-bgL">
+	 <div id="top-bgR">
+	  <div id="top">
+	  </div>
+	 </div>
+	</div>
+	<div id="header-bgL">
+	 <div id="header-bgR">
+     <div id="header">
+	  <div id="userarea">
+							<b>Hello Fantasist</b><br>you have <a href="http://forum.chaos-project.com/index.php?action=pm">153 messages</a>, 0 are new.<br>
+								<a href="http://forum.chaos-project.com/index.php?action=unread">Show unread posts since last visit.</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=unreadreplies">Show new replies to your posts.</a><br>
+	</div>
+	<div id="searcharea">
+		<form action="http://forum.chaos-project.com/index.php?action=search2" method="post" accept-charset="UTF-8">
+			<input name="search" value="Quick Search..." onfocus="this.value = '';" onblur="if(this.value=='') this.value='Quick Search...';" type="text"> 
+			<input name="topic" value="1390" type="hidden">
+		</form>
+	</div>
+		<a href="http://forum.chaos-project.com/index.php" title=""><span id="logo"></span></a>
+     </div> 		
+    </div>
+   </div>
+   <div id="body-bgL">
+	<div id="body-bgR">
+     <div id="toolbar">
+		
+        <div id="topmenu">
+           <ul><li><a href="http://www.chaos-project.com/"><span>Home</span></a></li><li><a class="current" href="http://forum.chaos-project.com/index.php"><span>Forum</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=chat"><span>Chat</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=help"><span>Help</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=search"><span>Search</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=calendar"><span>Calendar</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=profile"><span>Profile</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=pm"><span>My Messages</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=mlist"><span>Members</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=logout;sesc=2eb3680a2d038bdb9bf6452e261a4814"><span>Logout</span></a></li>
+		</ul>
+        </div>
+     </div>
+	</div>
+   </div>
+   <div id="body-bgL">
+	<div id="body-bgR">
+     <div id="bodyarea">
+		
+			
+				<b>News</b>: 
+				Make your MMO dream a reality! - <a href="http://forum.chaos-project.com/index.php?topic=3869.0">RPG Maker XP Online System</a>
+			
+		
+		<hr>
+		<div valign="middle" class="tborder" style="border-width: 0pt;" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3852525040754896";
+/* 728x90, stvoreno 2008.10.07 */
+google_ad_slot = "5654937062";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="index.php_files/show_ads.js">
+</script>
+
+		</div>
+		<hr id="horizontal">
+<a name="top"></a>
+<a name="msg30674"></a>
+<div><div class="nav" style="font-size: small; margin-bottom: 1ex; margin-top: 1ex;"><b><a href="http://forum.chaos-project.com/index.php" class="nav">Chaos Project</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php#2" class="nav">RPG Maker</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php/board,11.0.html" class="nav">RGSS / RGSS2 Scripts</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php/board,12.0.html" class="nav">RMXP Script Database</a></b> (Moderators: <a href="http://forum.chaos-project.com/index.php?action=profile;u=17" title="Board Moderator">Ryex</a>, <a href="http://forum.chaos-project.com/index.php?action=profile;u=220" title="Board Moderator">game_guy</a>)&nbsp;&gt;&nbsp;Topic: <b><a href="http://forum.chaos-project.com/index.php/topic,1390.0.html" class="nav">[XP] Transition Pack v1.1</a></b></div></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="middletext" style="padding-bottom: 4px;" valign="bottom">Pages: [<b>1</b>] <a class="navPages" href="http://forum.chaos-project.com/index.php/topic,1390.20.html">2</a> <a class="navPages" href="http://forum.chaos-project.com/index.php/topic,1390.40.html">3</a> <b> ... </b><a class="navPages" href="http://forum.chaos-project.com/index.php/topic,1390.80.html">5</a> &nbsp;<a href="http://forum.chaos-project.com/index.php/topic,1390.0/all.html">All</a> </td>
+		<td style="padding-right: 1ex;" align="right">
+			<div class="nav" style="margin-bottom: 2px;"> <a href="http://forum.chaos-project.com/index.php/topic,1390.0/prev_next,prev.html#new">« previous</a> <a href="http://forum.chaos-project.com/index.php/topic,1390.0/prev_next,next.html#new">next »</a></div>
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					
+		<td class="mirrortab_first">&nbsp;</td>
+		<td class="mirrortab_back"><a href="http://forum.chaos-project.com/index.php?action=post;topic=1390.0;num_replies=83">Reply</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=notify;sa=on;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="return confirm('Are you sure you wish to enable notification of new replies for this topic?');">Notify</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=markasread;sa=topic;t=126938;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814">Mark unread</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=sendtopic;topic=1390.0">Send this topic</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=printpage;topic=1390.0" target="_blank">Print</a></td>
+		<td class="mirrortab_last">&nbsp;</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<table class="tborder" style="border-bottom: 0pt none;" border="0" cellpadding="3" cellspacing="0" width="100%">
+	<tbody><tr class="catbg3">
+		<td style="padding-left: 6px;" valign="middle" width="2%">
+		<img src="index.php_files/veryhot_post.gif" alt="" align="bottom">
+		</td>
+		<td width="13%"> Author</td>
+		<td style="padding-left: 6px;" id="top_subject" align="left" valign="middle" width="85%">
+				Topic: [XP] Transition Pack v1.1 &nbsp;(Read 7165 times)
+		</td>
+	</tr>
+</tbody></table>
+<form action="http://forum.chaos-project.com/index.php?action=quickmod2;topic=1390.0" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0pt;" onsubmit="return in_edit_mode == 1 ? modify_save('2eb3680a2d038bdb9bf6452e261a4814') : confirm('Are you sure you want to do this?');">
+<table class="bordercolor" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr><td style="padding: 1px 1px 0pt;">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=11" title="View the profile of Fantasist">Fantasist</a></b>
+							<div class="smalltext">
+								Astral Trancist<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 124<br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 1932<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/aku_avatar-1.png" alt="" class="avatar" border="0"></div><br>
+								Wretched Samurai! Once again you have eluded me!!<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=11"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://gtmstechblog.wordpress.com/" title="Gautham's (alias Fantasist's) Tech Blog" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:thefantasist@yahoo.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30674.html#msg30674"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30674">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30674.html#msg30674">[XP] Transition Pack v1.1</a>
+									</div>
+									<div class="smalltext">« <b> on:</b> July 24, 2008, 11:15:52 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30674;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30674, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=post;msg=30674;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814"><img src="index.php_files/modify.gif" alt="Modify message" align="middle"><b>Modify</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=deletemsg;topic=1390.0;msg=30674;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="return confirm('Remove this message?');"><img src="index.php_files/delete.gif" alt="Remove message" align="middle"><b>Remove</b></a>
+									<input name="msgs[]" value="30674" class="check" type="checkbox">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post" id="msg_30674"><div align="center"><span style="font-size: 24pt; line-height: 1.3em;"><b>Transition Pack</b></span><br><span style="font-size: 16pt; line-height: 1.3em;">Authors: Fantasist</span><br><span style="font-size: 16pt; line-height: 1.3em;">Version: 1.1</span><br><span style="font-size: 14pt; line-height: 1.3em;">Type: Eye Candy</span><br>Key Term: Misc System</div><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Introduction</b></span><br><br>This script adds some exotic transitions which can't be attained by regular transition graphics.<br><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Features</b></span><br><br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li>Exotic transitions for special occasions in your game</li><li>Easily extendable</li></ul><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Screenshots</b></span><br><br>You can't appreciate the effects as screenshots, just try the demo <img src="index.php_files/happy.gif" alt="Happy" border="0"><br><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Demo</b></span><br><br><a href="http://www.sendspace.com/file/yjd54h" target="_blank">http://www.sendspace.com/file/yjd54h</a> (~243 KB)<br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler: Older demos" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: block;"><a href="http://www.sendspace.com/file/tlc19a" target="_blank">http://www.sendspace.com/file/tlc19a</a> (v1.0)<br><br><a href="http://www.sendspace.com/file/kmy8mt" target="_blank">http://www.sendspace.com/file/kmy8mt</a><br><a href="http://www.sendspace.com/file/pfd2h7" target="_blank">http://www.sendspace.com/file/pfd2h7</a> <b>(Thanks shdwlink for keeping the demo this long!)</b><br></div></div><br><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Script</b></span><br><br>Place this script below Scene_Debug and above Main.<br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: block;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;">#==============================================================================<br># ** Transition Pack<br>#------------------------------------------------------------------------------<br># by Fantasist<br># Version: 1.1<br># Date: 23-August-2009<br>#------------------------------------------------------------------------------<br># Version History:<br>#<br>#&nbsp; &nbsp;1.0 - First released version<br>#&nbsp; &nbsp;1.1 - Added code to make battle scene use the transitions<br>#------------------------------------------------------------------------------<br># Description:<br>#<br>#&nbsp; &nbsp; &nbsp;This script adds some exotic transitions which can't be attained by<br>#&nbsp; &nbsp;regular transition graphics.<br>#------------------------------------------------------------------------------<br># Compatibility:<br>#<br>#&nbsp; &nbsp; &nbsp;It should be compatible with most scripts.<br>#==============================================================================<br># Instructions:<br>#<br>#&nbsp; &nbsp; &nbsp;Place this script below Scene_Debug and above Main. To use this, instead<br>#&nbsp; &nbsp;of calling a scene directly like this:<br>#<br>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$scene = Scene_Something.new)<br>#<br>#&nbsp; &nbsp;call it like this:<br>#<br>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;$scene = Transition.new(Scene_Something.new)<br>#<br>#&nbsp; &nbsp; &nbsp;Before calling it, you can change "$game_temp.transition_type" to<br>#&nbsp; &nbsp;activate the transiton.<br>#<br>#&nbsp; &nbsp; &nbsp;As of version 1.1 and above, the battle scene automatically uses the<br>#&nbsp; &nbsp;transition effect, so all you have to do is call the battle using the event<br>#&nbsp; &nbsp;command.<br>#<br>#&nbsp; &nbsp; &nbsp;You can also call a certain effect like this:<br>#<br>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Transition.new(NEXT_SCENE, EFFECT_TYPE, EFFECT_TYPE_ARGUMENTS)<br>#<br>#<br>#&nbsp; &nbsp;Here is the list of transitions (as of version 1.0):<br>#<br>#&nbsp; &nbsp; &nbsp;0 - Zoom In<br>#&nbsp; &nbsp; &nbsp;1 - Zoom Out<br>#&nbsp; &nbsp; &nbsp;2 - Shred Horizontal<br>#&nbsp; &nbsp; &nbsp;3 - Shred Vertical<br>#&nbsp; &nbsp; &nbsp;4 - Fade<br>#&nbsp; &nbsp; &nbsp;5 - Explode<br>#&nbsp; &nbsp; &nbsp;6 - Explode (Chaos Project Style)<br>#&nbsp; &nbsp; &nbsp;7 - Transpose (by Blizzard)<br>#&nbsp; &nbsp; &nbsp;8 - Shutter<br>#&nbsp; &nbsp; &nbsp;9 - Drop Off<br>#<br>#&nbsp; &nbsp;For Scripters:<br>#<br>#&nbsp; &nbsp; &nbsp;For adding new transitions, check the method Transition#call_effect.<br>#&nbsp; &nbsp;Simply add a new case for "type" and add your method. Don't forget to<br>#&nbsp; &nbsp;add the *args version, it makes it easier to pass arguments when calling<br>#&nbsp; &nbsp;transitions. Check out the call_effect method for reference.<br>#------------------------------------------------------------------------------<br># Configuration:<br>#<br>#&nbsp; &nbsp; &nbsp;Scroll down a bit and you'll see the configuration.<br>#<br>#&nbsp; &nbsp;Explosion_Sound: Filename of the SE for Explosion transitions<br>#&nbsp; &nbsp; &nbsp; &nbsp;Clink_Sound: Filename of the SE for Drop Off transition<br>#------------------------------------------------------------------------------<br># Issues:<br>#<br>#&nbsp; &nbsp; &nbsp;None that I know of.<br>#------------------------------------------------------------------------------<br># Credits and Thanks:<br>#<br>#&nbsp; &nbsp;Fantasist, for making this script<br>#&nbsp; &nbsp;Blizzard, for the Transpose effect<br>#&nbsp; &nbsp;shdwlink1993, for keeping the demo for so long<br>#&nbsp; &nbsp;Ryexander, for helping me with an important scripting aspect<br>#------------------------------------------------------------------------------<br># Notes:<br>#<br>#&nbsp; &nbsp; &nbsp;If you have any problems, suggestions or comments, you can find me at:<br>#<br>#&nbsp; - forum.chaos-project.com<br>#<br>#&nbsp; &nbsp;Enjoy ^_^<br>#==============================================================================<br><br>#==============================================================================<br># ** Screen Module<br>#------------------------------------------------------------------------------<br>#&nbsp; This module handles taking screenshots for the transitions.<br>#==============================================================================<br>module Screen<br>&nbsp; <br>&nbsp; @screen = Win32API.new 'screenshot.dll', 'Screenshot', %w(l l l l p l l), ''<br>&nbsp; @readini = Win32API.new 'kernel32', 'GetPrivateProfileStringA', %w(p p p p l p), 'l'<br>&nbsp; @findwindow = Win32API.new 'user32', 'FindWindowA', %w(p p), 'l'<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Snap (take screenshot)<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def self.snap(file_name='Data/scrn_tmp', file_type=0)<br>&nbsp; &nbsp; game_name = "\0" * 256<br>&nbsp; &nbsp; @readini.call('Game', 'Title', '', game_name, 255, '.\Game.ini')<br>&nbsp; &nbsp; game_name.delete!('\0')<br>&nbsp; &nbsp; window = @findwindow.call('RGSS Player', game_name)<br>&nbsp; &nbsp; @screen.call(0, 0, 640, 480, file_name, window, file_type)<br>&nbsp; end<br>end<br><br>#==============================================================================<br># ** Transition<br>#------------------------------------------------------------------------------<br>#&nbsp; This scene handles transition effects while switching to another scene.<br>#==============================================================================<br>class Transition<br>&nbsp; <br>&nbsp; #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<br>&nbsp; # * CONFIG BEGIN<br>&nbsp; #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<br>&nbsp; Explosion_Sound = nil<br>&nbsp; &nbsp; &nbsp; Clink_Sound = nil<br>&nbsp; #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<br>&nbsp; # * CONFIG END<br>&nbsp; #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<br>&nbsp; <br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Call Effect<br>&nbsp; #&nbsp; &nbsp; &nbsp;type : Transition type<br>&nbsp; #&nbsp; &nbsp; &nbsp;args : Arguments for specified transition type<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def call_effect(type, args)<br>&nbsp; &nbsp; # Call appropriate method with or without arguments depending<br>&nbsp; &nbsp; # on values of type and args.<br>&nbsp; &nbsp; no_args = args.nil? || args == []<br>&nbsp; &nbsp; if no_args<br>&nbsp; &nbsp; &nbsp; case type<br>&nbsp; &nbsp; &nbsp; when 0 then zoom_in<br>&nbsp; &nbsp; &nbsp; when 1 then zoom_out<br>&nbsp; &nbsp; &nbsp; when 2 then shred_h<br>&nbsp; &nbsp; &nbsp; when 3 then shred_v<br>&nbsp; &nbsp; &nbsp; when 4 then fade<br>&nbsp; &nbsp; &nbsp; when 5 then explode<br>&nbsp; &nbsp; &nbsp; when 6 then explode_cp<br>&nbsp; &nbsp; &nbsp; when 7 then transpose<br>&nbsp; &nbsp; &nbsp; when 8 then shutter<br>&nbsp; &nbsp; &nbsp; when 9 then drop_off<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; else<br>&nbsp; &nbsp; &nbsp; case type<br>&nbsp; &nbsp; &nbsp; when 0 then zoom_in(*args)<br>&nbsp; &nbsp; &nbsp; when 1 then zoom_out(*args)<br>&nbsp; &nbsp; &nbsp; when 2 then shred_h(*args)<br>&nbsp; &nbsp; &nbsp; when 3 then shred_v(*args)<br>&nbsp; &nbsp; &nbsp; when 4 then fade(*args)<br>&nbsp; &nbsp; &nbsp; when 5 then explode(*args)<br>&nbsp; &nbsp; &nbsp; when 6 then explode_cp(*args)<br>&nbsp; &nbsp; &nbsp; when 7 then transpose(*args)<br>&nbsp; &nbsp; &nbsp; when 8 then shutter(*args)<br>&nbsp; &nbsp; &nbsp; when 9 then drop_off(*args)<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; end<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Initialize<br>&nbsp; #&nbsp; &nbsp; &nbsp;next_scene : Instance of the scene to transition into<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;type : Transition type<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *args : Arguments for specified transition type<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def initialize(next_scene=Scene_Menu.new, type=nil, *args)<br>&nbsp; &nbsp; @next_scene = next_scene<br>&nbsp; &nbsp; @args = args<br>&nbsp; &nbsp; # If transition type is specified, use it.<br>&nbsp; &nbsp; # Otherwise, use default.<br>&nbsp; &nbsp; @type = type.nil? ? $game_temp.transition_type : type<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Main<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def main<br>&nbsp; &nbsp; # Take screenshot and prepare sprite<br>&nbsp; &nbsp; Screen.snap<br>&nbsp; &nbsp; @sprite = Sprite.new<br>&nbsp; &nbsp; @sprite.bitmap = Bitmap.new('Data/scrn_tmp')<br>&nbsp; &nbsp; @sprite.x = @sprite.ox = @sprite.bitmap.width / 2<br>&nbsp; &nbsp; @sprite.y = @sprite.oy = @sprite.bitmap.height / 2<br>&nbsp; &nbsp; # Activate effect<br>&nbsp; &nbsp; Graphics.transition(0)<br>&nbsp; &nbsp; call_effect(@type, @args)<br>&nbsp; &nbsp; # Freeze screen and clean up and switch scene<br>&nbsp; &nbsp; Graphics.freeze<br>&nbsp; &nbsp; @sprite.bitmap.dispose unless @sprite.bitmap.nil?<br>&nbsp; &nbsp; @sprite.dispose unless @sprite.nil?<br>&nbsp; &nbsp; File.delete('Data/scrn_tmp')<br>&nbsp; &nbsp; $scene = @next_scene<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Play SE<br>&nbsp; #&nbsp; &nbsp; &nbsp;filename : Filename of the SE file in Audio/SE folder<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; pitch : Pitch of sound (50 - 100)<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp;volume : Volume of sound (0 - 100)<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def play_se(filename, pitch=nil, volume=nil)<br>&nbsp; &nbsp; se = RPG::AudioFile.new(filename)<br>&nbsp; &nbsp; se.pitch&nbsp; = pitch unless pitch.nil?<br>&nbsp; &nbsp; se.volume = volume unless volume.nil?<br>&nbsp; &nbsp; Audio.se_play('Audio/SE/' + se.name, se.volume, se.pitch)<br>&nbsp; end<br>&nbsp; <br>&nbsp; #==========================================================================<br>&nbsp; #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<br>&nbsp; # ** Effect Library<br>&nbsp; #::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<br>&nbsp; #==========================================================================<br>&nbsp; <br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Zoom In<br>&nbsp; #&nbsp; &nbsp; &nbsp;frames : Effect duration in frames<br>&nbsp; #&nbsp; &nbsp;max_zoom : The max amount the screen zooms out<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def zoom_in(frames=20, max_zoom=12)<br>&nbsp; &nbsp; # Calculate difference b/w current and target<br>&nbsp; &nbsp; # zooms (1 and max_zoom)<br>&nbsp; &nbsp; zoom_diff = max_zoom - 1<br>&nbsp; &nbsp; # Calculate unit values<br>&nbsp; &nbsp; unit_zoom = zoom_diff.to_f / frames<br>&nbsp; &nbsp; unit_opacity = (255.0 / frames).ceil<br>&nbsp; &nbsp; # Apply unit values to sprite<br>&nbsp; &nbsp; frames.times do<br>&nbsp; &nbsp; &nbsp; @sprite.zoom_x += unit_zoom<br>&nbsp; &nbsp; &nbsp; @sprite.zoom_y += unit_zoom<br>&nbsp; &nbsp; &nbsp; @sprite.opacity -= unit_opacity<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; end<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Zoom Out<br>&nbsp; #&nbsp; &nbsp; &nbsp;frames : Effect duration in frames<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def zoom_out(frames=20)<br>&nbsp; &nbsp; # Calculate unit values<br>&nbsp; &nbsp; unit_zoom = 1.0 / frames<br>&nbsp; &nbsp; unit_opacity = (255.0 / frames).ceil<br>&nbsp; &nbsp; # Apply unit values to sprite<br>&nbsp; &nbsp; frames.times do<br>&nbsp; &nbsp; &nbsp; @sprite.zoom_x -= unit_zoom<br>&nbsp; &nbsp; &nbsp; @sprite.zoom_y -= unit_zoom<br>&nbsp; &nbsp; &nbsp; @sprite.opacity -= unit_opacity<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; end<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Shred Horizontal<br>&nbsp; #&nbsp; &nbsp; &nbsp; thickness : Shred thickness<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp;slowness : How slow the screens move out<br>&nbsp; #&nbsp; &nbsp; start_speed : Speed of first step in pixels<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def shred_h(thickness=4, slowness=4, start_speed=8)<br>&nbsp; &nbsp; t = thickness<br>&nbsp; &nbsp; # Shred screen<br>&nbsp; &nbsp; sprite2 = Sprite.new<br>&nbsp; &nbsp; sprite2.bitmap = Bitmap.new(@sprite.bitmap.width, @sprite.bitmap.height)<br>&nbsp; &nbsp; sprite2.x = sprite2.ox = sprite2.bitmap.width / 2<br>&nbsp; &nbsp; sprite2.y = sprite2.oy = sprite2.bitmap.height / 2<br>&nbsp; &nbsp; for i in 0..(480/t)<br>&nbsp; &nbsp; &nbsp; sprite2.bitmap.blt(0, i*t*2, @sprite.bitmap, Rect.new(0, i*t*2, 640, t))<br>&nbsp; &nbsp; &nbsp; @sprite.bitmap.fill_rect(0, i*t*2, 640, t, Color.new(0, 0, 0, 0))<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; # Make sure starting step is not zero<br>&nbsp; &nbsp; start_speed = slowness if start_speed &lt; slowness<br>&nbsp; &nbsp; # Move sprites<br>&nbsp; &nbsp; dist = 640 - @sprite.x + start_speed<br>&nbsp; &nbsp; loop do<br>&nbsp; &nbsp; &nbsp; x_diff = (dist - (640 - @sprite.x)) / slowness<br>&nbsp; &nbsp; &nbsp; @sprite.x += x_diff<br>&nbsp; &nbsp; &nbsp; sprite2.x -= x_diff<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; &nbsp; break if @sprite.x &gt;= 640 + 320<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; sprite2.bitmap.dispose<br>&nbsp; &nbsp; sprite2.dispose<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Shred Vertical<br>&nbsp; #&nbsp; &nbsp; &nbsp; thickness : Shred thickness<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp;slowness : How slow the screens move out<br>&nbsp; #&nbsp; &nbsp; start_speed : Speed of first step in pixels<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def shred_v(thickness=4, slowness=4, start_speed=8)<br>&nbsp; &nbsp; t = thickness<br>&nbsp; &nbsp; # Shred screen<br>&nbsp; &nbsp; sprite2 = Sprite.new<br>&nbsp; &nbsp; sprite2.bitmap = Bitmap.new(@sprite.bitmap.width, @sprite.bitmap.height)<br>&nbsp; &nbsp; sprite2.x = sprite2.ox = sprite2.bitmap.width / 2<br>&nbsp; &nbsp; sprite2.y = sprite2.oy = sprite2.bitmap.height / 2<br>&nbsp; &nbsp; # Shred bitmap<br>&nbsp; &nbsp; for i in 0..(640/t)<br>&nbsp; &nbsp; &nbsp; sprite2.bitmap.blt(i*t*2, 0, @sprite.bitmap, Rect.new(i*t*2, 0, t, 480))<br>&nbsp; &nbsp; &nbsp; @sprite.bitmap.fill_rect(i*t*2, 0, t, 480, Color.new(0, 0, 0, 0))<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; # Make sure starting step is not zero<br>&nbsp; &nbsp; start_speed = slowness if start_speed &lt; slowness<br>&nbsp; &nbsp; # Move sprites<br>&nbsp; &nbsp; dist = 480 - @sprite.y + start_speed<br>&nbsp; &nbsp; loop do<br>&nbsp; &nbsp; &nbsp; y_diff = (dist - (480 - @sprite.y)) / slowness<br>&nbsp; &nbsp; &nbsp; @sprite.y += y_diff<br>&nbsp; &nbsp; &nbsp; sprite2.y -= y_diff<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; &nbsp; break if @sprite.y &gt;= 480 + 240<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; sprite2.bitmap.dispose<br>&nbsp; &nbsp; sprite2.dispose<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Fade<br>&nbsp; #&nbsp; &nbsp; &nbsp;target_color : Color to fade to<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;frames : Effect duration in frames<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def fade(target_color=Color.new(255, 255, 255), frames=10)<br>&nbsp; &nbsp; loop do<br>&nbsp; &nbsp; &nbsp; r = (@sprite.color.red&nbsp; &nbsp;* (frames - 1) + target_color.red)&nbsp; &nbsp;/ frames<br>&nbsp; &nbsp; &nbsp; g = (@sprite.color.green * (frames - 1) + target_color.green) / frames<br>&nbsp; &nbsp; &nbsp; b = (@sprite.color.blue&nbsp; * (frames - 1) + target_color.blue)&nbsp; / frames<br>&nbsp; &nbsp; &nbsp; a = (@sprite.color.alpha * (frames - 1) + target_color.alpha) / frames<br>&nbsp; &nbsp; &nbsp; @sprite.color.red&nbsp; &nbsp;= r<br>&nbsp; &nbsp; &nbsp; @sprite.color.green = g<br>&nbsp; &nbsp; &nbsp; @sprite.color.blue&nbsp; = b<br>&nbsp; &nbsp; &nbsp; @sprite.color.alpha = a<br>&nbsp; &nbsp; &nbsp; frames -= 1<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; &nbsp; break if frames &lt;= 0<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; Graphics.freeze<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Explode<br>&nbsp; #&nbsp; &nbsp; &nbsp;explosion_sound : The SE filename to use for explosion sound<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def explode(explosion_sound=Explosion_Sound)<br>&nbsp; &nbsp; shake_count = 2<br>&nbsp; &nbsp; shakes = 40<br>&nbsp; &nbsp; tone = 0<br>&nbsp; &nbsp; shakes.times do<br>&nbsp; &nbsp; &nbsp; @sprite.ox = 320 + (rand(2) == 0 ? -1 : 1) * shake_count<br>&nbsp; &nbsp; &nbsp; @sprite.oy = 240 + (rand(2) == 0 ? -1 : 1) * shake_count<br>&nbsp; &nbsp; &nbsp; shake_count += 0.2<br>&nbsp; &nbsp; &nbsp; tone += 128/shakes<br>&nbsp; &nbsp; &nbsp; @sprite.tone.set(tone, tone, tone)<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; @sprite.ox, @sprite.oy = 320, 240<br>&nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; bitmap = @sprite.bitmap.clone<br>&nbsp; &nbsp; @sprite.bitmap.dispose<br>&nbsp; &nbsp; @sprite.dispose<br>&nbsp; &nbsp; # Slice bitmap and create nodes (sprite parts)<br>&nbsp; &nbsp; hor = []<br>&nbsp; &nbsp; 20.times do |i|<br>&nbsp; &nbsp; &nbsp; ver = []<br>&nbsp; &nbsp; &nbsp; 15.times do |j|<br>&nbsp; &nbsp; &nbsp; &nbsp; # Set node properties<br>&nbsp; &nbsp; &nbsp; &nbsp; s = Sprite.new<br>&nbsp; &nbsp; &nbsp; &nbsp; s.ox, s.oy = 8 + rand(25), 8 + rand(25)<br>&nbsp; &nbsp; &nbsp; &nbsp; s.x, s.y = s.ox + 32 * i, s.oy + 32 * j<br>&nbsp; &nbsp; &nbsp; &nbsp; s.bitmap = Bitmap.new(32, 32)<br>&nbsp; &nbsp; &nbsp; &nbsp; s.bitmap.blt(0, 0, bitmap, Rect.new(i * 32, j * 32, 32, 32))<br>&nbsp; &nbsp; &nbsp; &nbsp; s.tone.set(128, 128, 128)<br>&nbsp; &nbsp; &nbsp; &nbsp; # Set node physics<br>&nbsp; &nbsp; &nbsp; &nbsp; angle&nbsp; = (rand(2) == 0 ? -1 : 1) * (4 + rand(4) * 10)<br>&nbsp; &nbsp; &nbsp; &nbsp; zoom_x = (rand(2) == 0 ? -1 : 1) * (rand(2) + 1).to_f / 100<br>&nbsp; &nbsp; &nbsp; &nbsp; zoom_y = (rand(2) == 0 ? -1 : 1) * (rand(2) + 1).to_f / 100<br>&nbsp; &nbsp; &nbsp; &nbsp; (zoom_x &gt; zoom_y) ? (zoom_y = -zoom_x) : (zoom_x = -zoom_y)<br>&nbsp; &nbsp; &nbsp; &nbsp; x_rand = (2 + rand(2) == 0 ? -2 : 2)<br>&nbsp; &nbsp; &nbsp; &nbsp; y_rand = (1 + rand(2) == 0 ? -1 : 1)<br>&nbsp; &nbsp; &nbsp; &nbsp; # Store node and it's physics<br>&nbsp; &nbsp; &nbsp; &nbsp; ver.push([s, angle, zoom_x, zoom_y, x_rand, y_rand])<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; hor.push(ver)<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; bitmap.dispose<br>&nbsp; &nbsp; # Play sound<br>&nbsp; &nbsp; play_se(explosion_sound) if explosion_sound != nil<br>&nbsp; &nbsp; # Move pics<br>&nbsp; &nbsp; 40.times do |k|<br>&nbsp; &nbsp; &nbsp; hor.each_with_index do |ver, i|<br>&nbsp; &nbsp; &nbsp; &nbsp; ver.each_with_index do |data, j|<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Get node and it's physics<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s, angle, zoom_x, zoom_y = data[0], data[1], data[2], data[3]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x_rand, y_rand = data[4], data[5]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Manipulate nodes<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.x += (i - 10) * x_rand<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.y += (j - 8) * y_rand + (k - 20)/2<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.zoom_x += zoom_x<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.zoom_y += zoom_y<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tone = s.tone.red - 8<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.tone.set(tone, tone, tone)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.opacity -= 13 if k &gt; 19<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.angle += angle % 360<br>&nbsp; &nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; # Dispose<br>&nbsp; &nbsp; for ver in hor<br>&nbsp; &nbsp; &nbsp; for data in ver<br>&nbsp; &nbsp; &nbsp; &nbsp; data[0].bitmap.dispose<br>&nbsp; &nbsp; &nbsp; &nbsp; data[0].dispose<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; hor = nil<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Explode (Chaos Project Style)<br>&nbsp; #&nbsp; &nbsp; &nbsp;explosion_sound : The SE filename to use for explosion sound<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def explode_cp(explosion_sound=Explosion_Sound)<br>&nbsp; &nbsp; bitmap = @sprite.bitmap.clone<br>&nbsp; &nbsp; @sprite.bitmap.dispose<br>&nbsp; &nbsp; @sprite.dispose<br>&nbsp; &nbsp; # Slice bitmap and create nodes (sprite parts)<br>&nbsp; &nbsp; hor = []<br>&nbsp; &nbsp; 20.times do |i|<br>&nbsp; &nbsp; &nbsp; ver = []<br>&nbsp; &nbsp; &nbsp; 15.times do |j|<br>&nbsp; &nbsp; &nbsp; &nbsp; # Set node properties<br>&nbsp; &nbsp; &nbsp; &nbsp; s = Sprite.new<br>&nbsp; &nbsp; &nbsp; &nbsp; s.ox = s.oy = 16<br>&nbsp; &nbsp; &nbsp; &nbsp; s.x, s.y = s.ox + 32 * i, s.oy + 32 * j<br>&nbsp; &nbsp; &nbsp; &nbsp; s.bitmap = Bitmap.new(32, 32)<br>&nbsp; &nbsp; &nbsp; &nbsp; s.bitmap.blt(0, 0, bitmap, Rect.new(i * 32, j * 32, 32, 32))<br>&nbsp; &nbsp; &nbsp; &nbsp; # Set node physics<br>&nbsp; &nbsp; &nbsp; &nbsp; angle&nbsp; = (rand(2) == 0 ? -1 : 1) * rand(8)<br>&nbsp; &nbsp; &nbsp; &nbsp; zoom_x = (rand(2) == 0 ? -1 : 1) * (rand(2) + 1).to_f / 100<br>&nbsp; &nbsp; &nbsp; &nbsp; zoom_y = (rand(2) == 0 ? -1 : 1) * (rand(2) + 1).to_f / 100<br>&nbsp; &nbsp; &nbsp; &nbsp; # Store node and it's physics<br>&nbsp; &nbsp; &nbsp; &nbsp; ver.push([s, angle, zoom_x, zoom_y])<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; hor.push(ver)<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; bitmap.dispose<br>&nbsp; &nbsp; # Play sound<br>&nbsp; &nbsp; play_se(explosion_sound) if explosion_sound != nil<br>&nbsp; &nbsp; # Move pics<br>&nbsp; &nbsp; 40.times do |k|<br>&nbsp; &nbsp; &nbsp; hor.each_with_index do |ver, i|<br>&nbsp; &nbsp; &nbsp; &nbsp; ver.each_with_index do |data, j|<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Get node and it's physics<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s, angle, zoom_x, zoom_y = data[0], data[1], data[2], data[3]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Manipulate node<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.x += i - 9<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.y += j - 8 + k<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.zoom_x += zoom_x<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.zoom_y += zoom_y<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.angle += angle % 360<br>&nbsp; &nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; # Dispose<br>&nbsp; &nbsp; for ver in hor<br>&nbsp; &nbsp; &nbsp; for data in ver<br>&nbsp; &nbsp; &nbsp; &nbsp; data[0].bitmap.dispose<br>&nbsp; &nbsp; &nbsp; &nbsp; data[0].dispose<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; hor = nil<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Transpose (bt Blizzard)<br>&nbsp; #&nbsp; &nbsp; &nbsp;frames : Effect duration in frames<br>&nbsp; #&nbsp; &nbsp;max_zoom : The max amount the screen zooms out<br>&nbsp; #&nbsp; &nbsp; &nbsp; times : Number of times screen is zoomed (times * 3 / 2)<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def transpose(frames=80, max_zoom=12, times=3)<br>&nbsp; &nbsp; max_zoom -= 1 # difference b/w zooms<br>&nbsp; &nbsp; max_zoom = max_zoom.to_f / frames / times # unit zoom<br>&nbsp; &nbsp; unit_opacity = (255.0 / frames).ceil<br>&nbsp; &nbsp; spr_opacity = (255.0 * times / 2 / frames).ceil<br>&nbsp; &nbsp; @sprites = []<br>&nbsp; &nbsp; (times * 3 / 2).times {<br>&nbsp; &nbsp; &nbsp; s = Sprite.new<br>&nbsp; &nbsp; &nbsp; s.x, s.y, s.ox, s.oy = 320, 240, 320, 240<br>&nbsp; &nbsp; &nbsp; s.bitmap = @sprite.bitmap<br>&nbsp; &nbsp; &nbsp; s.blend_type = 1<br>&nbsp; &nbsp; &nbsp; s.opacity = 128<br>&nbsp; &nbsp; &nbsp; s.visible = false<br>&nbsp; &nbsp; &nbsp; @sprites.push(s)}<br>&nbsp; &nbsp; count = 0<br>&nbsp; &nbsp; loop {<br>&nbsp; &nbsp; &nbsp; &nbsp; @sprites[count].visible = true<br>&nbsp; &nbsp; &nbsp; &nbsp; count += 1 if count &lt; times * 3 / 2 - 1<br>&nbsp; &nbsp; &nbsp; &nbsp; (frames / times / 2).times {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @sprites.each {|s|<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break if !s.visible<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.zoom_x += max_zoom<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.zoom_y += max_zoom<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.opacity -= spr_opacity}<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @sprite.opacity -= unit_opacity<br>&nbsp; &nbsp; &nbsp; &nbsp; Graphics.update}<br>&nbsp; &nbsp; &nbsp; &nbsp; break if @sprite.opacity == 0}<br>&nbsp; &nbsp; @sprites.each {|s| s.dispose}<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Shutter<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp;open_gap : How much the shutters open before moving away<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp;flip_dir : Whether or not the direction of shutters if reversed<br>&nbsp; #&nbsp; &nbsp; &nbsp; &nbsp;slowness : How slow the screens move out<br>&nbsp; #&nbsp; &nbsp; start_speed : Speed of first step in pixels<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def shutter(flip_dir=true, open_gap=16, slowness=4, start_speed=8)<br>&nbsp; &nbsp; # Shred screen<br>&nbsp; &nbsp; sprite2 = Sprite.new<br>&nbsp; &nbsp; sprite2.bitmap = Bitmap.new(@sprite.bitmap.width, @sprite.bitmap.height)<br>&nbsp; &nbsp; sprite2.x = sprite2.ox = sprite2.bitmap.width / 2<br>&nbsp; &nbsp; sprite2.y = sprite2.oy = sprite2.bitmap.height / 2<br>&nbsp; &nbsp; if flip_dir<br>&nbsp; &nbsp; &nbsp; ver_step = 1<br>&nbsp; &nbsp; &nbsp; sprite2.bitmap.blt(0, 240, @sprite.bitmap, Rect.new(0, 240, 640, 240))<br>&nbsp; &nbsp; &nbsp; @sprite.bitmap.fill_rect(0, 240, 640, 240, Color.new(0, 0, 0, 0))<br>&nbsp; &nbsp; else<br>&nbsp; &nbsp; &nbsp; ver_step = -1<br>&nbsp; &nbsp; &nbsp; sprite2.bitmap.blt(0, 0, @sprite.bitmap, Rect.new(0, 0, 640, 240))<br>&nbsp; &nbsp; &nbsp; @sprite.bitmap.fill_rect(0, 0, 640, 240, Color.new(0, 0, 0, 0))<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; # Move the shutters apart<br>&nbsp; &nbsp; open_gap.times do<br>&nbsp; &nbsp; &nbsp; @sprite.y -= ver_step<br>&nbsp; &nbsp; &nbsp; sprite2.y += ver_step<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; # Make sure starting step is not zero<br>&nbsp; &nbsp; start_speed = slowness if start_speed &lt; slowness<br>&nbsp; &nbsp; # Move sprites<br>&nbsp; &nbsp; dist = 640 - @sprite.x + start_speed<br>&nbsp; &nbsp; loop do<br>&nbsp; &nbsp; &nbsp; x_diff = (dist - (640 - @sprite.x)) / slowness<br>&nbsp; &nbsp; &nbsp; @sprite.x += x_diff<br>&nbsp; &nbsp; &nbsp; sprite2.x -= x_diff<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; &nbsp; break if @sprite.x &gt;= 640 + 320<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; sprite2.bitmap.dispose<br>&nbsp; &nbsp; sprite2.dispose<br>&nbsp; end<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Drop Off<br>&nbsp; #&nbsp; &nbsp; &nbsp;clink_sound : The SE filename to use for clinking sound<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; def drop_off(clink_sound=Clink_Sound)<br>&nbsp; &nbsp; bitmap = @sprite.bitmap.clone<br>&nbsp; &nbsp; @sprite.bitmap.dispose<br>&nbsp; &nbsp; @sprite.dispose<br>&nbsp; &nbsp; # Slice bitmap and create nodes (sprite parts)<br>&nbsp; &nbsp; max_time = 0<br>&nbsp; &nbsp; hor = []<br>&nbsp; &nbsp; 10.times do |i|<br>&nbsp; &nbsp; &nbsp; ver = []<br>&nbsp; &nbsp; &nbsp; 8.times do |j|<br>&nbsp; &nbsp; &nbsp; &nbsp; # Set node properties<br>&nbsp; &nbsp; &nbsp; &nbsp; s = Sprite.new<br>&nbsp; &nbsp; &nbsp; &nbsp; s.ox = rand(32)<br>&nbsp; &nbsp; &nbsp; &nbsp; s.oy = 0<br>&nbsp; &nbsp; &nbsp; &nbsp; s.x = s.ox + 64 * i<br>&nbsp; &nbsp; &nbsp; &nbsp; s.y = s.oy + 64 * j<br>&nbsp; &nbsp; &nbsp; &nbsp; s.bitmap = Bitmap.new(64, 64)<br>&nbsp; &nbsp; &nbsp; &nbsp; s.bitmap.blt(0, 0, bitmap, Rect.new(i * 64, j * 64, 64, 64))<br>&nbsp; &nbsp; &nbsp; &nbsp; # Set node physics<br>&nbsp; &nbsp; &nbsp; &nbsp; angle = rand(4) * 2<br>&nbsp; &nbsp; &nbsp; &nbsp; angle *= rand(2) == 0 ? -1 : 1<br>&nbsp; &nbsp; &nbsp; &nbsp; start_time = rand(30)<br>&nbsp; &nbsp; &nbsp; &nbsp; max_time = start_time if max_time &lt; start_time<br>&nbsp; &nbsp; &nbsp; &nbsp; # Store node and it's physics<br>&nbsp; &nbsp; &nbsp; &nbsp; ver.push([s, angle, start_time])<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; hor.push(ver)<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; bitmap.dispose<br>&nbsp; &nbsp; # Play sound<br>&nbsp; &nbsp; play_se(clink_sound) if clink_sound != nil<br>&nbsp; &nbsp; # Move pics<br>&nbsp; &nbsp; (40 + max_time).times do |k|<br>&nbsp; &nbsp; &nbsp; hor.each_with_index do |ver, i|<br>&nbsp; &nbsp; &nbsp; &nbsp; ver.each_with_index do |data, j|<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Get node and it's physics<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s, angle, start_time = data[0], data[1], data[2]<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Manipulate node<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if k &gt; start_time<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tone = s.tone.red - 6<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.tone.set(tone, tone, tone)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.y += k - start_time<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.angle += angle % 360<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elsif k == start_time<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tone = 128<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.tone.set(tone, tone, tone)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; $game_system.se_play(Clink_Sound) if clink_sound != nil<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; &nbsp; Graphics.update<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; # Dispose<br>&nbsp; &nbsp; for ver in hor<br>&nbsp; &nbsp; &nbsp; for data in ver<br>&nbsp; &nbsp; &nbsp; &nbsp; data[0].bitmap.dispose<br>&nbsp; &nbsp; &nbsp; &nbsp; data[0].dispose<br>&nbsp; &nbsp; &nbsp; end<br>&nbsp; &nbsp; end<br>&nbsp; &nbsp; hor = nil<br>&nbsp; end<br>end<br>#==============================================================================<br># ** Game_Temp<br>#------------------------------------------------------------------------------<br>#&nbsp; Added transition_type attribute which controls transition shown.<br>#==============================================================================<br>class Game_Temp&nbsp; <br>&nbsp; attr_accessor :transition_type&nbsp; <br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Object Initialization<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; alias transpack_game_temp_init initialize<br>&nbsp; def initialize<br>&nbsp; &nbsp; @transition_type = 0<br>&nbsp; &nbsp; transpack_game_temp_init<br>&nbsp; end<br>end<br>#==============================================================================<br># ** Scene_Map<br>#------------------------------------------------------------------------------<br>#&nbsp; Scene_Map modded to use the transition effect when battle begins.<br>#==============================================================================<br>class Scene_Map<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; # * Battle Call<br>&nbsp; #--------------------------------------------------------------------------<br>&nbsp; alias transpack_call_battle call_battle<br>&nbsp; def call_battle<br>&nbsp; &nbsp; transpack_call_battle<br>&nbsp; &nbsp; $scene = Transition.new($scene)<br>&nbsp; end<br>end<br></pre></div></div></div><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Instructions</b></span><br><br>First of all, you will need the screenshot dll. You will find it in the demo. Put it in your game folder.<br><br>To use this, instead of calling a scene directly like this:<br><div class="codeheader">Code:</div><div class="code"><pre style="margin-top: 0pt; display: inline;">$scene = Scene_Something.new</pre></div><br>call it like this:<br><div class="codeheader">Code:</div><div class="code"><pre style="margin-top: 0pt; display: inline;">$scene = Transition.new(Scene_Something.new)</pre></div><br>Before calling it, you can change "$game_temp.transition_type" to activate the transition.<br><br>As
+ of version 1.1 and above, the battle scene automatically uses the 
+transition effect, so all you have to do is call the battle using the 
+event command.<br><br>Optionally, you can also call a certain effect like this:<br><div class="codeheader">Code:</div><div class="code"><pre style="margin-top: 0pt; display: inline;">Transition.new(NEXT_SCENE, EFFECT_TYPE, EFFECT_TYPE_ARGUMENTS)</pre></div><br>&nbsp;&nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; NEXT_SCENE: An 
+instance of the next scene (eg: Scene_Battle.new)<br>&nbsp;&nbsp; &nbsp;
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;EFFECT_TYPE: (Optional)
+ Number indicating the effect type (eg: 4)<br>EFFECT_TYPE_ARGUMENTS: (Optional) Arguments for the called effect type (eg: Color.new(255, 0, 0))<br><br>For
+ example, the following code will call the menu scene with the Fade 
+effect with green color and the effect lasts for 20 frames (nearly half a
+ second):<br><div class="codeheader">Code:</div><div class="code"><pre style="margin-top: 0pt; display: inline;">$scene = Transition.new(Scene_Menu.new, 4, Color.new(0, 255, 0), 20)</pre></div><br>For Scripters:<br><br>&nbsp;&nbsp;
+ &nbsp; For adding new transitions, check the method 
+Transition#call_effect. Simply add a new case for "type" and add your 
+method. Don't forget to add the *args version, it makes it easier to 
+pass arguments when calling transitions. Check out the call_effect 
+method for reference.<br><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Compatibility</b></span><br><br>It should be compatible with most scripts.<br><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Credits and Thanks</b></span><br><br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li>Fantasist, for making this script</li><li>Blizzard, for the Transpose effect</li><li>shdwlink1993, for keeping the demo for so long</li><li>Ryexander, for helping me with an important scripting aspect</li></ul><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Author's Notes</b></span><br><br>If you have any problems, suggestions or comments, you can find me at:<br><br>&nbsp;- forum.chaos-project.com<br><br>Enjoy ^_^</div>
+							<img src="index.php_files/modify_inline.gif" alt="" id="modify_button_30674" style="cursor: pointer;" onclick="modify_msg('30674', '2eb3680a2d038bdb9bf6452e261a4814')" align="right">
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30674" valign="bottom">
+									« <i>Last Edit: August 23, 2009, 06:27:00 PM by Fantasist</i> »
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.0;msg=30674">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">123.176.42.89</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;">I have stopped developing code for RMXP. And as of now, I am no longer going to update or even properly support my scripts.</span>
+ I just might, but don't count on it. So you collectors out there might 
+want to download any of my demos and stuff before Sendspace deletes them
+ from their server.<br><br>I hate to leave my work unsupported, but I'm just not willing to spend my mental resources on RGSS anymore. So, <b>I welcome the other scripters here to use/adapt my scripts and post their modified versions if they want.</b><br><br>Sorry and thank you.<br><br><a href="http://fantasist.mypersonality.info/" target="_blank"><img src="index.php_files/161926.png" alt="" border="0"></a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30676"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=65" title="View the profile of Starrodkirby86">Starrodkirby86</a></b>
+							<div class="smalltext">
+								Melon Catgirl<br>
+								Global Moderator<br>
+								Lexima Warrior<br>
+								<img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><br>
+								<br>
+								Level: 162<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=65;topic=1390.0;m=30676;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=65;topic=1390.0;m=30676;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=65" title="Personal Message (Offline)"><img src="index.php_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 2951<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/nekotear.png" alt="" class="avatar" border="0"></div><br>
+								Let's make love affairs with Blizzard.<br>
+								<br>
+								
+								<a href="http://members.msn.com/Gaarafan4910@hotmail.com" target="_blank"><img src="index.php_files/msntalk.gif" alt="Gaarafan4910@hotmail.com" border="0"></a>
+								<a href="aim:goim?screenname=Starrodkirby86&amp;message=Hi.+Are+you+there?"><img src="index.php_files/aim.gif" alt="Starrodkirby86" border="0"></a>
+								<a href="http://edit.yahoo.com/config/send_webmesg?.target=Starrodkirby86"><img src="index.php_files/online.gif" alt="Starrodkirby86" border="0"></a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=65"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://starrodkirby86.web44.net/" title="The Archive of Starrodkirby86" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:starrodkirby86@aol.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=65" title="Personal Message (Offline)"><img src="index.php_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30676.html#msg30676"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30676">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30676.html#msg30676">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #1 on:</b> July 24, 2008, 11:24:48 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30676;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30676, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post"><del>I'm sorry, I would be very interested in 
+this, but I keep getting an error. It's a font error, and it probably 
+can be corrected with the RGSSwhatever dll or something, but I don't 
+know...The font error is when </del><br><br>Screw this, I tinkered with the scripts and then pressed OK (With no effect) and everything works again. 0_0 Lame Enterbrain.<br><br>Fantasist,
+ those transitions are sexy, especially the title screen one. I've been 
+listening to too much Reversing Darts by cuevox recently, which is 
+giving me a techno vibe. Possibly you can do something pixel-related 
+that isn't a mosaic or dissolve effect? And if you have Windows Movie 
+Maker, those transitions you can try implementing in RPG Maker. The 
+more, the merrier! <img src="index.php_files/happy.gif" alt="Happy" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30676" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.1;msg=30676">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><div align="center"><a href="http://forum.chaos-project.com/index.php/topic,3455.msg68307.html#new" target="_blank"><img src="index.php_files/starrodkirby86.png" alt="" border="0"></a><br><span style="font-size: 7pt; line-height: 1.3em;">What's osu!? It's a rhythm game. Thought I should have a signature with a working rank. ;P It's now clickable!<br>Still <a href="http://forum.chaos-project.com/index.php?action=profile;u=120" target="_blank">Aqua</a>'s biggest fan (Or am I?).</span><br><hr><a href="http://forum.chaos-project.com/index.php/topic,4552.0.html" target="_blank"><img src="index.php_files/clock-sig.png" alt="" border="0"></a><br><hr><a href="http://forum.chaos-project.com/index.php/topic,4329.msg83348.html#new" target="_blank">Click here if you're a fan of Lucky Star!</a></div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30681"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=11" title="View the profile of Fantasist">Fantasist</a></b>
+							<div class="smalltext">
+								Astral Trancist<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 124<br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 1932<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/aku_avatar-1.png" alt="" class="avatar" border="0"></div><br>
+								Wretched Samurai! Once again you have eluded me!!<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=11"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://gtmstechblog.wordpress.com/" title="Gautham's (alias Fantasist's) Tech Blog" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:thefantasist@yahoo.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30681.html#msg30681"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30681">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30681.html#msg30681">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #2 on:</b> July 24, 2008, 11:37:31 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30681;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30681, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=post;msg=30681;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814"><img src="index.php_files/modify.gif" alt="Modify message" align="middle"><b>Modify</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=deletemsg;topic=1390.0;msg=30681;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="return confirm('Remove this message?');"><img src="index.php_files/delete.gif" alt="Remove message" align="middle"><b>Remove</b></a>
+									<input name="msgs[]" value="30681" class="check" type="checkbox">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post" id="msg_30681">Mosaic... It's impossible to do 
+in RMXP without lag, so I've decided to skip that one. Dissolve can be 
+done by using a transition graphic. You mentioned Movie Maker, nice, I 
+almost forgot. I've set my target on the powerpoint transitions, though 
+most of them can be done in the regular way by making use of transition 
+graphics. You can find 4 files in the Graphics/Transitions folder and 
+you'll recognize the 'random blinds vertical/horizontal' from 
+powerpoint. Many others need scripting, but are very easy to do. I've 
+just been busy with other stuff.<br>I picked the shred effect from Pokemon Sapphire, I really liked it. That's what inspired me to complete this.</div>
+							<img src="index.php_files/modify_inline.gif" alt="" id="modify_button_30681" style="cursor: pointer;" onclick="modify_msg('30681', '2eb3680a2d038bdb9bf6452e261a4814')" align="right">
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30681" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.2;msg=30681">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">123.176.42.89</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;">I have stopped developing code for RMXP. And as of now, I am no longer going to update or even properly support my scripts.</span>
+ I just might, but don't count on it. So you collectors out there might 
+want to download any of my demos and stuff before Sendspace deletes them
+ from their server.<br><br>I hate to leave my work unsupported, but I'm just not willing to spend my mental resources on RGSS anymore. So, <b>I welcome the other scripters here to use/adapt my scripts and post their modified versions if they want.</b><br><br>Sorry and thank you.<br><br><a href="http://fantasist.mypersonality.info/" target="_blank"><img src="index.php_files/161926.png" alt="" border="0"></a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30683"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=65" title="View the profile of Starrodkirby86">Starrodkirby86</a></b>
+							<div class="smalltext">
+								Melon Catgirl<br>
+								Global Moderator<br>
+								Lexima Warrior<br>
+								<img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><br>
+								<br>
+								Level: 162<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=65;topic=1390.0;m=30683;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=65;topic=1390.0;m=30683;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=65" title="Personal Message (Offline)"><img src="index.php_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 2951<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/nekotear.png" alt="" class="avatar" border="0"></div><br>
+								Let's make love affairs with Blizzard.<br>
+								<br>
+								
+								<a href="http://members.msn.com/Gaarafan4910@hotmail.com" target="_blank"><img src="index.php_files/msntalk.gif" alt="Gaarafan4910@hotmail.com" border="0"></a>
+								<a href="aim:goim?screenname=Starrodkirby86&amp;message=Hi.+Are+you+there?"><img src="index.php_files/aim.gif" alt="Starrodkirby86" border="0"></a>
+								<a href="http://edit.yahoo.com/config/send_webmesg?.target=Starrodkirby86"><img src="index.php_files/online.gif" alt="Starrodkirby86" border="0"></a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=65"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://starrodkirby86.web44.net/" title="The Archive of Starrodkirby86" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:starrodkirby86@aol.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=65" title="Personal Message (Offline)"><img src="index.php_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30683.html#msg30683"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30683">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30683.html#msg30683">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #3 on:</b> July 24, 2008, 11:41:53 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30683;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30683, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">Oh yeah, Pokemon battles have some of the best 
+transitions ever...Especially the crazy Pokeballs, battle split screens,
+ and the flashing screen of doom. Emulating those would be pure 
+awesomeness (Especially the split screen, I know many people would want 
+something along those lines). All of those aforementioned can be easily 
+done with pictures though, but a simple call script mechanism to launch 
+these is even easier than having a lot of pictures moving back and 
+forth. <br><br>Maybe you can try having rotated effects toward the blinds? Or make something trippy and drug-like?</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30683" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.3;msg=30683">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><div align="center"><a href="http://forum.chaos-project.com/index.php/topic,3455.msg68307.html#new" target="_blank"><img src="index.php_files/starrodkirby86.png" alt="" border="0"></a><br><span style="font-size: 7pt; line-height: 1.3em;">What's osu!? It's a rhythm game. Thought I should have a signature with a working rank. ;P It's now clickable!<br>Still <a href="http://forum.chaos-project.com/index.php?action=profile;u=120" target="_blank">Aqua</a>'s biggest fan (Or am I?).</span><br><hr><a href="http://forum.chaos-project.com/index.php/topic,4552.0.html" target="_blank"><img src="index.php_files/clock-sig.png" alt="" border="0"></a><br><hr><a href="http://forum.chaos-project.com/index.php/topic,4329.msg83348.html#new" target="_blank">Click here if you're a fan of Lucky Star!</a></div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30687"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=11" title="View the profile of Fantasist">Fantasist</a></b>
+							<div class="smalltext">
+								Astral Trancist<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 124<br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 1932<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/aku_avatar-1.png" alt="" class="avatar" border="0"></div><br>
+								Wretched Samurai! Once again you have eluded me!!<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=11"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://gtmstechblog.wordpress.com/" title="Gautham's (alias Fantasist's) Tech Blog" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:thefantasist@yahoo.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30687.html#msg30687"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30687">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30687.html#msg30687">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #4 on:</b> July 24, 2008, 11:59:28 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30687;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30687, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=post;msg=30687;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814"><img src="index.php_files/modify.gif" alt="Modify message" align="middle"><b>Modify</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=deletemsg;topic=1390.0;msg=30687;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="return confirm('Remove this message?');"><img src="index.php_files/delete.gif" alt="Remove message" align="middle"><b>Remove</b></a>
+									<input name="msgs[]" value="30687" class="check" type="checkbox">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post" id="msg_30687">Split screen as in the screen splitting in half and the parts moving away? That's easy to script.<br><br><div class="quoteheader">Quote</div><div class="quote">Maybe you can try having rotated effects toward the blinds? Or make something trippy and drug-like?</div>I didn't get you :p<br><br>Btw,
+ try to think about this, how many effects will people use? I've tried 
+it, and having all those 'special' effects gets annoying. These can be 
+used once in a while or for some special events (like boss battles in 
+CP). That's the reason I've made this topic instead of just making all 
+the transition effects whether graphical or scriptwise.</div>
+							<img src="index.php_files/modify_inline.gif" alt="" id="modify_button_30687" style="cursor: pointer;" onclick="modify_msg('30687', '2eb3680a2d038bdb9bf6452e261a4814')" align="right">
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30687" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.4;msg=30687">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">123.176.42.89</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;">I have stopped developing code for RMXP. And as of now, I am no longer going to update or even properly support my scripts.</span>
+ I just might, but don't count on it. So you collectors out there might 
+want to download any of my demos and stuff before Sendspace deletes them
+ from their server.<br><br>I hate to leave my work unsupported, but I'm just not willing to spend my mental resources on RGSS anymore. So, <b>I welcome the other scripters here to use/adapt my scripts and post their modified versions if they want.</b><br><br>Sorry and thank you.<br><br><a href="http://fantasist.mypersonality.info/" target="_blank"><img src="index.php_files/161926.png" alt="" border="0"></a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30689"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=65" title="View the profile of Starrodkirby86">Starrodkirby86</a></b>
+							<div class="smalltext">
+								Melon Catgirl<br>
+								Global Moderator<br>
+								Lexima Warrior<br>
+								<img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><br>
+								<br>
+								Level: 162<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=65;topic=1390.0;m=30689;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=65;topic=1390.0;m=30689;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=65" title="Personal Message (Offline)"><img src="index.php_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 2951<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/nekotear.png" alt="" class="avatar" border="0"></div><br>
+								Let's make love affairs with Blizzard.<br>
+								<br>
+								
+								<a href="http://members.msn.com/Gaarafan4910@hotmail.com" target="_blank"><img src="index.php_files/msntalk.gif" alt="Gaarafan4910@hotmail.com" border="0"></a>
+								<a href="aim:goim?screenname=Starrodkirby86&amp;message=Hi.+Are+you+there?"><img src="index.php_files/aim.gif" alt="Starrodkirby86" border="0"></a>
+								<a href="http://edit.yahoo.com/config/send_webmesg?.target=Starrodkirby86"><img src="index.php_files/online.gif" alt="Starrodkirby86" border="0"></a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=65"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://starrodkirby86.web44.net/" title="The Archive of Starrodkirby86" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:starrodkirby86@aol.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=65" title="Personal Message (Offline)"><img src="index.php_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30689.html#msg30689"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30689">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30689.html#msg30689">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #5 on:</b> July 25, 2008, 12:18:09 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30689;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30689, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post"><a href="http://youtube.com/watch?v=Rcwj_5NxDAo" target="_blank">http://youtube.com/watch?v=Rcwj_5NxDAo</a><br>This split screen.<br>---<br>I
+ have no idea what I'm saying too Fanta...except maybe I was leading on 
+to something from the rotating blinds which gave me the impression of 
+drug-like fantasies. <del>Ask mumerus what's it like.</del><br>---<br>You
+ can't like change effect every teleport map, but the more transitions 
+you have, the more a player can choose to use for their game. They can 
+choose a small list of it and it's cool, while another player can choose
+ a different combination as of which. All of them can be used in a 
+cleverly nice boss battle, maybe transitions can prove to be annoyances 
+or a boss battle's specialty...Hehe.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30689" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.5;msg=30689">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><div align="center"><a href="http://forum.chaos-project.com/index.php/topic,3455.msg68307.html#new" target="_blank"><img src="index.php_files/starrodkirby86.png" alt="" border="0"></a><br><span style="font-size: 7pt; line-height: 1.3em;">What's osu!? It's a rhythm game. Thought I should have a signature with a working rank. ;P It's now clickable!<br>Still <a href="http://forum.chaos-project.com/index.php?action=profile;u=120" target="_blank">Aqua</a>'s biggest fan (Or am I?).</span><br><hr><a href="http://forum.chaos-project.com/index.php/topic,4552.0.html" target="_blank"><img src="index.php_files/clock-sig.png" alt="" border="0"></a><br><hr><a href="http://forum.chaos-project.com/index.php/topic,4329.msg83348.html#new" target="_blank">Click here if you're a fan of Lucky Star!</a></div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30759"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=1" title="View the profile of Blizzard">Blizzard</a></b>
+							<div class="smalltext">
+								Where am I?<br>
+								Administrator<br>
+								Has over 9000 posts<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br>
+								<br>
+								Level: 410<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=1;topic=1390.0;m=30759;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=1;topic=1390.0;m=30759;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 11882<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/18190maria.jpg" alt="" class="avatar" border="0"></div><br>
+								I like random girls.<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=1"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.chaos-project.com/" title="You're already on it. (-_-')" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:boris.blizzard@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30759.html#msg30759"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30759">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30759.html#msg30759">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #6 on:</b> July 25, 2008, 09:20:39 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30759;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30759, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">Very nice. Lemme give you another one for the collection. <img src="index.php_files/naughty.gif" alt="Naughty" border="0"><br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;">&nbsp; def transpose(frames=80, max_zoom=12, times=4)<br>&nbsp; &nbsp; max_zoom -= 1 # difference b/w zooms<br>&nbsp; &nbsp; max_zoom = max_zoom.to_f / frames / times # unit zoom<br>&nbsp; &nbsp; unit_opacity = (255.0 / frames).ceil<br>&nbsp; &nbsp; spr_opacity = (255.0 * times / 2 / frames).ceil<br>&nbsp; &nbsp; @sprites = []<br>&nbsp; &nbsp; (times * 3 / 2).times {<br>&nbsp; &nbsp; &nbsp; &nbsp; s = Sprite.new<br>&nbsp; &nbsp; &nbsp; &nbsp; s.x, s.y, s.ox, s.oy = 320, 240, 320, 240<br>&nbsp; &nbsp; &nbsp; &nbsp; s.bitmap = @sprite.bitmap<br>&nbsp; &nbsp; &nbsp; &nbsp; s.blend_type = 1<br>&nbsp; &nbsp; &nbsp; &nbsp; s.opacity = 128<br>&nbsp; &nbsp; &nbsp; &nbsp; s.visible = false<br>&nbsp; &nbsp; &nbsp; &nbsp; @sprites.push(s)}<br>&nbsp; &nbsp; count = 0<br>&nbsp; &nbsp; loop {<br>&nbsp; &nbsp; &nbsp; &nbsp; @sprites[count].visible = true<br>&nbsp; &nbsp; &nbsp; &nbsp; count += 1 if count &lt; times * 3 / 2 - 1<br>&nbsp; &nbsp; &nbsp; &nbsp; (frames / times / 2).times {<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @sprites.each {|s|<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break if !s.visible<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.zoom_x += max_zoom<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.zoom_y += max_zoom<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s.opacity -= spr_opacity}<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @sprite.opacity -= unit_opacity<br>&nbsp; &nbsp; &nbsp; &nbsp; Graphics.update}<br>&nbsp; &nbsp; &nbsp; &nbsp; break if @sprite.opacity == 0}<br>&nbsp; &nbsp; @sprites.each {|s| s.dispose}<br>&nbsp; end<br></pre></div></div></div></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30759" valign="bottom">
+									« <i>Last Edit: July 25, 2008, 09:22:32 AM by Blizzard</i> »
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.6;msg=30759">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;"><b>I have retired from RMXP! Please do not send me PMs or e-Mails asking for support!</b></span><br><br><div class="quoteheader">Quote from: Bender</div><div class="quote">Ahhh, what an awful dream. Ones and zeroes everywhere... and I thought I saw a two.</div><div class="quoteheader">Quote from: Fry</div><div class="quote">It was just a dream, Bender. There's no such thing as two.</div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30818"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=11" title="View the profile of Fantasist">Fantasist</a></b>
+							<div class="smalltext">
+								Astral Trancist<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 124<br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 1932<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/aku_avatar-1.png" alt="" class="avatar" border="0"></div><br>
+								Wretched Samurai! Once again you have eluded me!!<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=11"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://gtmstechblog.wordpress.com/" title="Gautham's (alias Fantasist's) Tech Blog" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:thefantasist@yahoo.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30818.html#msg30818"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30818">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30818.html#msg30818">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #7 on:</b> July 25, 2008, 10:29:17 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30818;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30818, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=post;msg=30818;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814"><img src="index.php_files/modify.gif" alt="Modify message" align="middle"><b>Modify</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=deletemsg;topic=1390.0;msg=30818;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="return confirm('Remove this message?');"><img src="index.php_files/delete.gif" alt="Remove message" align="middle"><b>Remove</b></a>
+									<input name="msgs[]" value="30818" class="check" type="checkbox">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post" id="msg_30818">@Bliz: Awesome! Now that's what I'm talking about people!<br>@Star:
+ Okay, in the context of RGSS, I'll only be worrying about the part 
+where the screen whites and blacks out. From there, the battle scene is 
+responsible. It can be coded, so I'll try.</div>
+							<img src="index.php_files/modify_inline.gif" alt="" id="modify_button_30818" style="cursor: pointer;" onclick="modify_msg('30818', '2eb3680a2d038bdb9bf6452e261a4814')" align="right">
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30818" valign="bottom">
+									« <i>Last Edit: July 25, 2008, 11:02:54 AM by Fantasist</i> »
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.7;msg=30818">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">123.176.42.89</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;">I have stopped developing code for RMXP. And as of now, I am no longer going to update or even properly support my scripts.</span>
+ I just might, but don't count on it. So you collectors out there might 
+want to download any of my demos and stuff before Sendspace deletes them
+ from their server.<br><br>I hate to leave my work unsupported, but I'm just not willing to spend my mental resources on RGSS anymore. So, <b>I welcome the other scripters here to use/adapt my scripts and post their modified versions if they want.</b><br><br>Sorry and thank you.<br><br><a href="http://fantasist.mypersonality.info/" target="_blank"><img src="index.php_files/161926.png" alt="" border="0"></a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30837"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=208" title="View the profile of Berans">Berans</a></b>
+							<div class="smalltext">
+								Basic Member<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 10<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=208;topic=1390.0;m=30837;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=208;topic=1390.0;m=30837;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=208" title="Personal Message (Offline)"><img src="index.php_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 75<br>
+								<br>
+								Corn = win...it's yellow<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=208"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:iloverpgs@hotmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=208" title="Personal Message (Offline)"><img src="index.php_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30837.html#msg30837"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30837">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30837.html#msg30837">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #8 on:</b> July 25, 2008, 03:09:36 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30837;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30837, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">I doubt this is even seriously possible, but a "roll-up" fade would be nice. <br>where one of the screen edges rolls up onto the rest of the screen, leaving black behind, until the whole thing is offscreen</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30837" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.8;msg=30837">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30843"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=1" title="View the profile of Blizzard">Blizzard</a></b>
+							<div class="smalltext">
+								Where am I?<br>
+								Administrator<br>
+								Has over 9000 posts<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br>
+								<br>
+								Level: 410<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=1;topic=1390.0;m=30843;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=1;topic=1390.0;m=30843;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 11882<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/18190maria.jpg" alt="" class="avatar" border="0"></div><br>
+								I like random girls.<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=1"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.chaos-project.com/" title="You're already on it. (-_-')" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:boris.blizzard@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30843.html#msg30843"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30843">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30843.html#msg30843">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #9 on:</b> July 25, 2008, 04:53:39 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30843;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30843, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">That's not possible without heavy lag.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30843" valign="bottom">
+									« <i>Last Edit: July 26, 2008, 04:37:32 PM by Blizzard</i> »
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.9;msg=30843">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;"><b>I have retired from RMXP! Please do not send me PMs or e-Mails asking for support!</b></span><br><br><div class="quoteheader">Quote from: Bender</div><div class="quote">Ahhh, what an awful dream. Ones and zeroes everywhere... and I thought I saw a two.</div><div class="quoteheader">Quote from: Fry</div><div class="quote">It was just a dream, Bender. There's no such thing as two.</div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30949"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=208" title="View the profile of Berans">Berans</a></b>
+							<div class="smalltext">
+								Basic Member<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 10<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=208;topic=1390.0;m=30949;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=208;topic=1390.0;m=30949;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=208" title="Personal Message (Offline)"><img src="index.php_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 75<br>
+								<br>
+								Corn = win...it's yellow<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=208"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:iloverpgs@hotmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=208" title="Personal Message (Offline)"><img src="index.php_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30949.html#msg30949"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30949">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30949.html#msg30949">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #10 on:</b> July 26, 2008, 08:42:44 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30949;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30949, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">One can always dream <img src="index.php_files/wink.gif" alt="Wink" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30949" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.10;msg=30949">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg30971"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=1" title="View the profile of Blizzard">Blizzard</a></b>
+							<div class="smalltext">
+								Where am I?<br>
+								Administrator<br>
+								Has over 9000 posts<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br>
+								<br>
+								Level: 410<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=1;topic=1390.0;m=30971;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=1;topic=1390.0;m=30971;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 11882<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/18190maria.jpg" alt="" class="avatar" border="0"></div><br>
+								I like random girls.<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=1"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.chaos-project.com/" title="You're already on it. (-_-')" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:boris.blizzard@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30971.html#msg30971"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_30971">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg30971.html#msg30971">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #11 on:</b> July 26, 2008, 04:38:29 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=30971;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(30971, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">But an effect where you don't see the rolled up edges wouldn't be a problem. =X</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_30971" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.11;msg=30971">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;"><b>I have retired from RMXP! Please do not send me PMs or e-Mails asking for support!</b></span><br><br><div class="quoteheader">Quote from: Bender</div><div class="quote">Ahhh, what an awful dream. Ones and zeroes everywhere... and I thought I saw a two.</div><div class="quoteheader">Quote from: Fry</div><div class="quote">It was just a dream, Bender. There's no such thing as two.</div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg32822"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=17" title="View the profile of Ryex">Ryex</a></b>
+							<div class="smalltext">
+								Blizzard's son<br>
+								Moderator<br>
+								Lexima Warrior<br>
+								<img src="index.php_files/starmod.gif" alt="*" border="0"><br>
+								<br>
+								Level: 105<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=17;topic=1390.0;m=32822;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=17;topic=1390.0;m=32822;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=17" title="Personal Message (Offline)"><img src="index.php_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 2344<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/Dioavy-1.png" alt="" class="avatar" border="0"></div><br>
+								The Ryex, An arctic bird that eats penguins<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=17"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:ryexander@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=17" title="Personal Message (Offline)"><img src="index.php_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg32822.html#msg32822"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_32822">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg32822.html#msg32822">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #12 on:</b> August 09, 2008, 01:08:40 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=32822;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(32822, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">you should make one where the screen cracks and then falls apart!</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_32822" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.12;msg=32822">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><img src="index.php_files/Stonearch-1.jpg" alt="" border="0"><br><br>If time were Truly linear, I would not be here and the world would be knee deep in ashes.</div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg32828"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=1" title="View the profile of Blizzard">Blizzard</a></b>
+							<div class="smalltext">
+								Where am I?<br>
+								Administrator<br>
+								Has over 9000 posts<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br>
+								<br>
+								Level: 410<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=1;topic=1390.0;m=32828;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=1;topic=1390.0;m=32828;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 11882<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/18190maria.jpg" alt="" class="avatar" border="0"></div><br>
+								I like random girls.<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=1"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.chaos-project.com/" title="You're already on it. (-_-')" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:boris.blizzard@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg32828.html#msg32828"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_32828">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg32828.html#msg32828">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #13 on:</b> August 09, 2008, 01:25:34 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=32828;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(32828, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">Generating the cracks before that transition is
+ time consuming. That's why I haven't used it in my game but instead I 
+use the squares. -_-</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_32828" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.13;msg=32828">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;"><b>I have retired from RMXP! Please do not send me PMs or e-Mails asking for support!</b></span><br><br><div class="quoteheader">Quote from: Bender</div><div class="quote">Ahhh, what an awful dream. Ones and zeroes everywhere... and I thought I saw a two.</div><div class="quoteheader">Quote from: Fry</div><div class="quote">It was just a dream, Bender. There's no such thing as two.</div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg32830"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=8" title="View the profile of The King of Procrastination">The King of Procrastination</a></b>
+							<div class="smalltext">
+								The guy who should be working on Chaotic Fury<br>
+								Global Moderator<br>
+								Ethereal Devastator<br>
+								<img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><br>
+								<br>
+								Level: 23<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=8;topic=1390.0;m=32830;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=8;topic=1390.0;m=32830;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=8" title="Personal Message (Offline)"><img src="index.php_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 679<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/TrainerREDEpic.png" alt="" class="avatar" border="0"></div><br>
+								Think you can beat the greatest Champion?<br>
+								<br>
+								
+								<a href="http://members.msn.com/GuardianAngel72@hotmail.com" target="_blank"><img src="index.php_files/msntalk.gif" alt="GuardianAngel72@hotmail.com" border="0"></a>
+								<a href="aim:goim?screenname=GuardianAngelX72&amp;message=Hi.+Are+you+there?"><img src="index.php_files/aim.gif" alt="GuardianAngelX72" border="0"></a>
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=8"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:GuardianAngelX72@aim.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=8" title="Personal Message (Offline)"><img src="index.php_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg32830.html#msg32830"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_32830">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg32830.html#msg32830">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #14 on:</b> August 09, 2008, 01:31:50 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=32830;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(32830, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">lol, the Final Fantasy Battle 
+Transition...atleast I know X and X-2 use the screen cracking one and 
+then the pieces bursting out like Blizzard's squares.<br><br>It's some crazy shit really, but yeah, it looks like it'd be very time consuming to make that.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_32830" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.14;msg=32830">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><a href="http://forum.chaos-project.com/index.php/topic,37.0.html" target="_blank"><img src="index.php_files/ChaoticFuryMockTitle.png" alt="" border="0"></a><br><img src="index.php_files/ubda8498.gif" alt="" border="0"><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler: Rule 2" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="quoteheader">Quote from: Rule No.2</div><div class="quote">Keep
+ your signatures at reasonable size. The pictures in your signature may 
+altogether be no more than 200kB and take up an area of 1600px2. That 
+means 2 pictures of 400x200 are fine, one picture of 800x200 is fine and
+ so on. Also <b><span style="color: red;">your pictures height must not exceed 200 pixels</span></b>,
+ width can be as big as you want as long as your pictures match the 
+other criteria. Every signature not matching this criteria is a subject 
+of the moderator team to remove and leave this rule as message in your 
+signature.</div></div></div>Chaotic Fury = 22% completed<br>Secret Project = 70% completed</div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg32833"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=1" title="View the profile of Blizzard">Blizzard</a></b>
+							<div class="smalltext">
+								Where am I?<br>
+								Administrator<br>
+								Has over 9000 posts<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br>
+								<br>
+								Level: 410<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=1;topic=1390.0;m=32833;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=1;topic=1390.0;m=32833;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 11882<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/18190maria.jpg" alt="" class="avatar" border="0"></div><br>
+								I like random girls.<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=1"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.chaos-project.com/" title="You're already on it. (-_-')" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:boris.blizzard@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg32833.html#msg32833"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_32833">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg32833.html#msg32833">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #15 on:</b> August 09, 2008, 01:44:30 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=32833;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(32833, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">No, not time consuming to make it, it would 
+consume a lot of time to generate the images. RMXP will always freeze 
+for a moment before that transition can be made.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_32833" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.15;msg=32833">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;"><b>I have retired from RMXP! Please do not send me PMs or e-Mails asking for support!</b></span><br><br><div class="quoteheader">Quote from: Bender</div><div class="quote">Ahhh, what an awful dream. Ones and zeroes everywhere... and I thought I saw a two.</div><div class="quoteheader">Quote from: Fry</div><div class="quote">It was just a dream, Bender. There's no such thing as two.</div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg32854"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=11" title="View the profile of Fantasist">Fantasist</a></b>
+							<div class="smalltext">
+								Astral Trancist<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 124<br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 1932<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/aku_avatar-1.png" alt="" class="avatar" border="0"></div><br>
+								Wretched Samurai! Once again you have eluded me!!<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=11"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://gtmstechblog.wordpress.com/" title="Gautham's (alias Fantasist's) Tech Blog" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:thefantasist@yahoo.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg32854.html#msg32854"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_32854">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg32854.html#msg32854">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #16 on:</b> August 09, 2008, 03:41:42 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=32854;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(32854, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=post;msg=32854;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814"><img src="index.php_files/modify.gif" alt="Modify message" align="middle"><b>Modify</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=deletemsg;topic=1390.0;msg=32854;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="return confirm('Remove this message?');"><img src="index.php_files/delete.gif" alt="Remove message" align="middle"><b>Remove</b></a>
+									<input name="msgs[]" value="32854" class="check" type="checkbox">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post" id="msg_32854">Today is Saturday and we're having a party, so I'll post the script on Sunday (tomorrow) or the next Saturday.</div>
+							<img src="index.php_files/modify_inline.gif" alt="" id="modify_button_32854" style="cursor: pointer;" onclick="modify_msg('32854', '2eb3680a2d038bdb9bf6452e261a4814')" align="right">
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_32854" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.16;msg=32854">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">123.176.42.89</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;">I have stopped developing code for RMXP. And as of now, I am no longer going to update or even properly support my scripts.</span>
+ I just might, but don't count on it. So you collectors out there might 
+want to download any of my demos and stuff before Sendspace deletes them
+ from their server.<br><br>I hate to leave my work unsupported, but I'm just not willing to spend my mental resources on RGSS anymore. So, <b>I welcome the other scripters here to use/adapt my scripts and post their modified versions if they want.</b><br><br>Sorry and thank you.<br><br><a href="http://fantasist.mypersonality.info/" target="_blank"><img src="index.php_files/161926.png" alt="" border="0"></a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg32856"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=8" title="View the profile of The King of Procrastination">The King of Procrastination</a></b>
+							<div class="smalltext">
+								The guy who should be working on Chaotic Fury<br>
+								Global Moderator<br>
+								Ethereal Devastator<br>
+								<img src="index.php_files/stargmod.gif" alt="*" border="0"><img src="index.php_files/stargmod.gif" alt="*" border="0"><br>
+								<br>
+								Level: 23<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=8;topic=1390.0;m=32856;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=8;topic=1390.0;m=32856;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=8" title="Personal Message (Offline)"><img src="index.php_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 679<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/TrainerREDEpic.png" alt="" class="avatar" border="0"></div><br>
+								Think you can beat the greatest Champion?<br>
+								<br>
+								
+								<a href="http://members.msn.com/GuardianAngel72@hotmail.com" target="_blank"><img src="index.php_files/msntalk.gif" alt="GuardianAngel72@hotmail.com" border="0"></a>
+								<a href="aim:goim?screenname=GuardianAngelX72&amp;message=Hi.+Are+you+there?"><img src="index.php_files/aim.gif" alt="GuardianAngelX72" border="0"></a>
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=8"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:GuardianAngelX72@aim.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=8" title="Personal Message (Offline)"><img src="index.php_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg32856.html#msg32856"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_32856">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg32856.html#msg32856">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #17 on:</b> August 09, 2008, 03:57:02 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=32856;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(32856, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">howbout a demo link?</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_32856" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.17;msg=32856">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><a href="http://forum.chaos-project.com/index.php/topic,37.0.html" target="_blank"><img src="index.php_files/ChaoticFuryMockTitle.png" alt="" border="0"></a><br><img src="index.php_files/ubda8498.gif" alt="" border="0"><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler: Rule 2" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="quoteheader">Quote from: Rule No.2</div><div class="quote">Keep
+ your signatures at reasonable size. The pictures in your signature may 
+altogether be no more than 200kB and take up an area of 1600px2. That 
+means 2 pictures of 400x200 are fine, one picture of 800x200 is fine and
+ so on. Also <b><span style="color: red;">your pictures height must not exceed 200 pixels</span></b>,
+ width can be as big as you want as long as your pictures match the 
+other criteria. Every signature not matching this criteria is a subject 
+of the moderator team to remove and leave this rule as message in your 
+signature.</div></div></div>Chaotic Fury = 22% completed<br>Secret Project = 70% completed</div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg32859"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=1" title="View the profile of Blizzard">Blizzard</a></b>
+							<div class="smalltext">
+								Where am I?<br>
+								Administrator<br>
+								Has over 9000 posts<br>
+								<img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><img src="index.php_files/staradmin.gif" alt="*" border="0"><br>
+								<br>
+								Level: 410<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=1;topic=1390.0;m=32859;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=1;topic=1390.0;m=32859;sesc=2eb3680a2d038bdb9bf6452e261a4814">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 11882<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/18190maria.jpg" alt="" class="avatar" border="0"></div><br>
+								I like random girls.<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=1"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.chaos-project.com/" title="You're already on it. (-_-')" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:boris.blizzard@gmail.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg32859.html#msg32859"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_32859">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg32859.html#msg32859">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #18 on:</b> August 09, 2008, 04:12:00 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=32859;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(32859, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post"><div class="quoteheader"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg30674.html#msg30674">Quote from: Fantasist on July 24, 2008, 11:15:52 PM</a></div><div class="quote"><span style="font-size: 1pt; line-height: 1.3em;">So
+ this is a transition pack script I'm making. It has about 7 effects for
+ now. I haven't posted the script yet because I still need to improve 
+the code a bit, and I need more ideas for effects. The current effects 
+are:<br><br>1. Zoom In<br>2. Zoom Out<br>3. Shred Horizontal<br>4. Shred Vertical<br>5. Fade to color<br>6. Explode (My version)<br>7. Explode (CP Version)<br><span style="color: blue;">8. Transpose (by Blizzard)</span><br><span style="color: red;">9. Pokemon Battle Transition 1 (one of the GBA games)</span><br><br>Legend:<br><br><span style="color: blue;">Newly added, not in the demo</span><br><span style="color: red;">Considered, not yet added (might not be added)</span><br><br></span>Here's the demo:<br><b><span style="font-size: 30pt; line-height: 1.3em;"><a href="http://www.sendspace.com/file/6sq1li" target="_blank">http://www.sendspace.com/file/6sq1li</a></span></b><br><span style="font-size: 1pt; line-height: 1.3em;"><br>The project is not encrypted, but there's no point in using the code just yet, it's kind of messy.<br><br><span style="text-decoration: underline;">So point of this topic is to gather more ideas for transition effects.</span>
+ Someone must have some specific request or some interesting ideas. 
+Remember, I don't guarantee anything, but just give mesome ideas.<br><br>I'll
+ wait for 2 days and if I don't get many requests, I'll close this topic
+ and work on trimming the script for posting. So request away <img src="index.php_files/happy.gif" alt="Happy" border="0"><br></span></div><br><img src="index.php_files/laugh.gif" alt=":D" border="0"><br><br>If
+ you want transpose, just add a new conditional branch, add the call for
+ my method and add the code for my method (posted above) into that 
+script.</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_32859" valign="bottom">
+									« <i>Last Edit: August 09, 2008, 04:13:14 AM by Blizzard</i> »
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.18;msg=32859">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;"><b>I have retired from RMXP! Please do not send me PMs or e-Mails asking for support!</b></span><br><br><div class="quoteheader">Quote from: Bender</div><div class="quote">Ahhh, what an awful dream. Ones and zeroes everywhere... and I thought I saw a two.</div><div class="quoteheader">Quote from: Fry</div><div class="quote">It was just a dream, Bender. There's no such thing as two.</div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg32860"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=11" title="View the profile of Fantasist">Fantasist</a></b>
+							<div class="smalltext">
+								Astral Trancist<br>
+								<img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><img src="index.php_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 124<br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="index.php_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 1932<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="index.php_files/aku_avatar-1.png" alt="" class="avatar" border="0"></div><br>
+								Wretched Samurai! Once again you have eluded me!!<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=11"><img src="index.php_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://gtmstechblog.wordpress.com/" title="Gautham's (alias Fantasist's) Tech Blog" target="_blank"><img src="index.php_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:thefantasist@yahoo.com"><img src="index.php_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="index.php_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,1390.msg32860.html#msg32860"><img src="index.php_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_32860">
+										<a href="http://forum.chaos-project.com/index.php/topic,1390.msg32860.html#msg32860">Re: [XP] Transition Pack Alpha Stages Demo (request away!)</a>
+									</div>
+									<div class="smalltext">« <b>Reply #19 on:</b> August 09, 2008, 04:13:04 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=32860;topic=1390.0;num_replies=83;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="doQuote(32860, '2eb3680a2d038bdb9bf6452e261a4814'); return false;"><img src="index.php_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=post;msg=32860;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814"><img src="index.php_files/modify.gif" alt="Modify message" align="middle"><b>Modify</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=deletemsg;topic=1390.0;msg=32860;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="return confirm('Remove this message?');"><img src="index.php_files/delete.gif" alt="Remove message" align="middle"><b>Remove</b></a>
+									<input name="msgs[]" value="32860" class="check" type="checkbox">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post" id="msg_32860"><del>In the first post :p</del><br>lol!<br>I haven't really changed much, so there's no point in uploading it again.<br><br>EDIT:
+ They removed the file... I guess I'll have to speed up the process and 
+come up with a proper submission by this Sunday &gt;.&lt;</div>
+							<img src="index.php_files/modify_inline.gif" alt="" id="modify_button_32860" style="cursor: pointer;" onclick="modify_msg('32860', '2eb3680a2d038bdb9bf6452e261a4814')" align="right">
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_32860" valign="bottom">
+									« <i>Last Edit: August 09, 2008, 04:14:56 AM by Fantasist</i> »
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=1390.19;msg=32860">Report to moderator</a> &nbsp;
+									<img src="index.php_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">123.176.42.89</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;">I have stopped developing code for RMXP. And as of now, I am no longer going to update or even properly support my scripts.</span>
+ I just might, but don't count on it. So you collectors out there might 
+want to download any of my demos and stuff before Sendspace deletes them
+ from their server.<br><br>I hate to leave my work unsupported, but I'm just not willing to spend my mental resources on RGSS anymore. So, <b>I welcome the other scripters here to use/adapt my scripts and post their modified versions if they want.</b><br><br>Sorry and thank you.<br><br><a href="http://fantasist.mypersonality.info/" target="_blank"><img src="index.php_files/161926.png" alt="" border="0"></a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 0pt 0pt 1px;"></td></tr>
+</tbody></table>
+<a name="lastPost"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="middletext">Pages: [<b>1</b>] <a class="navPages" href="http://forum.chaos-project.com/index.php/topic,1390.20.html">2</a> <a class="navPages" href="http://forum.chaos-project.com/index.php/topic,1390.40.html">3</a> <b> ... </b><a class="navPages" href="http://forum.chaos-project.com/index.php/topic,1390.80.html">5</a> &nbsp;<a href="http://forum.chaos-project.com/index.php/topic,1390.0/all.html">All</a> </td>
+		<td style="padding-right: 1ex;" align="right">
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					
+		<td class="maintab_first">&nbsp;</td>
+		<td class="maintab_back"><a href="http://forum.chaos-project.com/index.php?action=post;topic=1390.0;num_replies=83">Reply</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=notify;sa=on;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814" onclick="return confirm('Are you sure you wish to enable notification of new replies for this topic?');">Notify</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=editpoll;add;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814">Add poll</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=sendtopic;topic=1390.0">Send this topic</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=printpage;topic=1390.0" target="_blank">Print</a></td>
+		<td class="maintab_last">&nbsp;</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<script language="JavaScript" type="text/javascript" src="index.php_files/xml_topic.js"></script>
+<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+	quickReplyCollapsed = false;
+
+	smf_topic = 1390;
+	smf_start = 0;
+	smf_show_modify = 1;
+
+	// On quick modify, this is what the body will look like.
+	var smf_template_body_edit = '<div id="error_box" style="padding: 4px; color: red;"></div><textarea class="editor" name="message" rows="12" style="width: 94%; margin-bottom: 10px;">%body%</textarea><br /><input type="hidden" name="sc" value="2eb3680a2d038bdb9bf6452e261a4814" /><input type="hidden" name="topic" value="1390" /><input type="hidden" name="msg" value="%msg_id%" /><div style="text-align: center;"><input type="submit" name="post" value="Save" onclick="return modify_save(\'2eb3680a2d038bdb9bf6452e261a4814\');" accesskey="s" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" onclick="return modify_cancel();" /></div>';
+
+	// And this is the replacement for the subject.
+	var smf_template_subject_edit = '<input type="text" name="subject" value="%subject%" size="60" style="width: 99%;"  maxlength="80" />';
+
+	// Restore the message to this after editing.
+	var smf_template_body_normal = '%body%';
+	var smf_template_subject_normal = '<a href="http://forum.chaos-project.com/index.php/topic,1390.msg%msg_id%.html#msg%msg_id%">%subject%</a>';
+	var smf_template_top_subject = "Topic: %subject% &nbsp;(Read 7165 times)"
+
+	if (window.XMLHttpRequest)
+		showModifyButtons();
+// ]]></script>
+<table style="margin-bottom: 1ex;" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+				<td valign="top"><div class="nav" style="font-size: small; margin-bottom: 1ex; margin-top: 1ex;"><b><a href="http://forum.chaos-project.com/index.php" class="nav">Chaos Project</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php#2" class="nav">RPG Maker</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php/board,11.0.html" class="nav">RGSS / RGSS2 Scripts</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php/board,12.0.html" class="nav">RMXP Script Database</a></b> (Moderators: <a href="http://forum.chaos-project.com/index.php?action=profile;u=17" title="Board Moderator">Ryex</a>, <a href="http://forum.chaos-project.com/index.php?action=profile;u=220" title="Board Moderator">game_guy</a>)&nbsp;&gt;&nbsp;Topic: <b><a href="http://forum.chaos-project.com/index.php/topic,1390.0.html" class="nav">[XP] Transition Pack v1.1</a></b></div></td> 
+				<td class="nav" align="right" valign="top"> <a href="http://forum.chaos-project.com/index.php/topic,1390.0/prev_next,prev.html#new">« previous</a> <a href="http://forum.chaos-project.com/index.php/topic,1390.0/prev_next,next.html#new">next »</a></td>
+		</tr>
+</tbody></table>
+	<table style="margin-left: 1ex;" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			
+		<td class="mirrortab_first">&nbsp;</td>
+		<td class="mirrortab_back"><a href="http://forum.chaos-project.com/index.php?action=lock;topic=1390.0;sesc=2eb3680a2d038bdb9bf6452e261a4814">Lock topic</a> &nbsp;|&nbsp; <a href="javascript:document.quickModForm.submit();" onclick="return confirm('Are you sure you want to do this?');" id="quickmodSubmit">Delete Selected</a></td>
+		<td class="mirrortab_last">&nbsp;</td>
+		</tr>
+	</tbody></table>
+	<input name="sc" value="2eb3680a2d038bdb9bf6452e261a4814" type="hidden">
+</form>
+<div class="tborder"><div class="titlebg2" style="padding: 4px;" align="right">
+	<form action="http://forum.chaos-project.com/index.php" method="get" accept-charset="UTF-8" style="padding: 0pt; margin: 0pt;">
+		<span class="smalltext">Jump to:</span>
+		<select name="jumpto" id="jumpto" onchange="if (this.selectedIndex > 0 &amp;&amp; this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+			<option value="">Please select a destination:</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#1">Community</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=1.0"> =&gt; News/Suggestions/Feedback</option>
+			<option value="?board=2.0"> =&gt; Welcome!</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#2">RPG Maker</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=5.0"> =&gt; General RPG Maker Discussion</option>
+			<option value="?board=6.0"> ===&gt; General Troubleshooting/Help</option>
+			<option value="?board=7.0"> =&gt; Tutorials</option>
+			<option value="?board=8.0"> ===&gt; Tutorial Database</option>
+			<option value="?board=28.0"> ===&gt; Tutorial Requests</option>
+			<option value="?board=9.0"> =&gt; Event Systems</option>
+			<option value="?board=10.0"> ===&gt; Event System Database</option>
+			<option value="?board=35.0"> ===&gt; Event System Troubleshooting</option>
+			<option value="?board=29.0"> ===&gt; Event System Requests</option>
+			<option value="?board=11.0"> =&gt; RGSS / RGSS2 Scripts</option>
+			<option value="?board=12.0" selected="selected"> ===&gt; RMXP Script Database</option>
+			<option value="?board=33.0"> ===&gt; RMVX Script Database</option>
+			<option value="?board=34.0"> ===&gt; Script Troubleshooting</option>
+			<option value="?board=30.0"> ===&gt; Script Requests</option>
+			<option value="?board=13.0"> =&gt; Projects/Games</option>
+			<option value="?board=14.0"> ===&gt; New Projects</option>
+			<option value="?board=15.0"> ===&gt; Project/Testers Recruitment</option>
+			<option value="?board=50.0"> ===&gt; Non-RM Projects</option>
+			<option value="?board=16.0"> =&gt; Resources</option>
+			<option value="?board=17.0"> ===&gt; Resource Database</option>
+			<option value="?board=31.0"> ===&gt; Resource Requests</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#6">Project: Remexos</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=38.0"> =&gt; Public Information</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#5">Featured Projects</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=36.0"> =&gt; Lexima Legends IV - Chaos Project</option>
+			<option value="?board=51.0"> =&gt; Valhira Online</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#3">General</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=18.0"> =&gt; Chat</option>
+			<option value="?board=19.0"> ===&gt; Express your Creativity</option>
+			<option value="?board=20.0"> ===&gt; Intelligent Debate</option>
+			<option value="?board=21.0"> ===&gt; Role Playing and Interactive Story Telling</option>
+			<option value="?board=32.0"> =&gt; Entertainment</option>
+			<option value="?board=22.0"> =&gt; Electronic and Computer Section</option>
+			<option value="?board=23.0"> ===&gt; Video Games</option>
+			<option value="?board=47.0"> ===&gt; C++/C# Development</option>
+			<option value="?board=24.0"> ===&gt; Programming / Scripting / Web</option>
+			<option value="?board=48.0"> =&gt; Academics</option>
+			<option value="?board=49.0"> ===&gt; Mathematics</option>
+			<option value="?board=25.0"> =&gt; Advertising</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#4">S.P.A.M. and Forum Games</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=26.0"> =&gt; S.P.A.M.</option>
+			<option value="?board=27.0"> ===&gt; Forum Games</option>
+		</select>&nbsp;
+		<input value="go" onclick="if (this.form.jumpto.options[this.form.jumpto.selectedIndex].value) window.location.href = 'http://forum.chaos-project.com/index.php' + this.form.jumpto.options[this.form.jumpto.selectedIndex].value;" type="button">
+	</form>
+</div></div><br>
+<a name="quickreply"></a>
+<div class="tborder">
+	<a href="javascript:swapQuickReply();"><img id="quickReplyExpand1" src="index.php_files/cat-collapseL.gif" alt="*" title="Shrink or expand the header." style="margin: 6px 0pt 0pt 4px;" align="left"></a>
+	<div id="cat-bgL">
+		<a href="javascript:swapQuickReply();"><img id="quickReplyExpand2" src="index.php_files/cat-collapseR.gif" alt="*" title="Shrink or expand the header." style="margin: 6px 4px 0pt 0pt;" align="right"></a>
+		<div id="cat-bgR" style="padding-right: 50px;">
+			<div class="catbg">Quick Reply</div>
+		</div>
+	</div>
+	<table class="bordercolor" border="0" cellpadding="4" cellspacing="1" width="100%">
+		<tbody><tr id="quickReplyOptions">
+			<td class="windowbg" valign="top" width="25%">With a <i>Quick-Reply</i> you can use bulletin board code and smileys as you would in a normal post, but much more conveniently.</td>
+			<td class="windowbg" align="center" width="75%">
+				<form action="http://forum.chaos-project.com/index.php?action=post2" method="post" accept-charset="UTF-8" name="postmodify" id="postmodify" onsubmit="submitonce(this);" style="margin: 0pt;">
+					<input name="topic" value="1390" type="hidden">
+					<input name="subject" value="Re: [XP] Transition Pack v1.1" type="hidden">
+					<input name="icon" value="xx" type="hidden">
+					<input name="notify" value="0" type="hidden">
+					<input name="goback" value="1" type="hidden">
+					<input name="num_replies" value="83" type="hidden">
+					<textarea cols="75" rows="7" style="width: 95%; height: 100px;" name="message" tabindex="1"></textarea><br>
+					<input name="post" value="Post" onclick="return submitThisOnce(this);" accesskey="s" tabindex="2" type="submit">
+					<input name="preview" value="Preview" onclick="return submitThisOnce(this);" accesskey="p" tabindex="4" type="submit">
+					<input name="sc" value="2eb3680a2d038bdb9bf6452e261a4814" type="hidden">
+					<input name="seqnum" value="9501844" type="hidden">
+				</form>
+			</td>
+		</tr>
+	</tbody></table>
+</div><br>
+		<div class="tborder">
+			<a href="#" onclick="shrinkHeaderSB(!current_header_sb); return false;"><img id="upshrink_sbL" src="index.php_files/cat-collapseL.gif" alt="*" title="Shrink or expand the header." style="margin: 6px 0pt 0pt 4px;" align="left"></a>
+			<div id="cat-bgL">
+				<a href="#" onclick="shrinkHeaderSB(!current_header_sb); return false;"><img id="upshrink_sbR" src="index.php_files/cat-collapseR.gif" alt="*" title="Shrink or expand the header." style="margin: 6px 4px 0pt 0pt;" align="right"></a>
+				<div id="cat-bgR" style="padding-right: 50px;">
+					<div class="catbg">Shoutbox</div>
+				</div>
+			</div>
+			<div id="upshrinkHeaderSB">
+				<table class="bordercolor" border="0" cellpadding="4" cellspacing="1" width="100%">
+					<tbody><tr>
+						<td class="titlebg" colspan="2">Latest Shouts</td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="windowbg" align="center" valign="middle" width="20">
+							<a href="http://forum.chaos-project.com/index.php?action=shout_archive"><img src="index.php_files/online_002.gif" alt="View All"></a>
+						</td>
+						<td class="windowbg2" width="100%">
+			<span id="new_shout"></span>
+			<div id="shout_48404">
+			<b>Today</b> at 12:09:43 AM <a href="http://forum.chaos-project.com/index.php?action=profile;u=62">winkio</a> -&nbsp;It's Fantasist! <img src="index.php_files/laugh.gif" alt=":D" border="0"> <img src="index.php_files/laugh.gif" alt=":D" border="0"> <img src="index.php_files/laugh.gif" alt=":D" border="0"> <img src="index.php_files/laugh.gif" alt=":D" border="0"> <img src="index.php_files/laugh.gif" alt=":D" border="0"> 
+			</div>
+			<div id="shout_48403">
+			December 05, 2010, 11:07:49 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=11">Fantasist</a> -&nbsp;Hey Aqua and natmatt <img src="index.php_files/laugh.gif" alt=":D" border="0"> 
+			</div>
+			<div id="shout_48402">
+			December 05, 2010, 10:21:17 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=1">Blizzard</a> -&nbsp;The kind that leaves traumas. 
+			</div>
+			<div id="shout_48401">
+			December 05, 2010, 08:41:07 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=398">Tuggernuts</a> -&nbsp;The good kind. 
+			</div>
+			<div id="shout_48400">
+			December 05, 2010, 08:31:51 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=782">Cait Sith</a> -&nbsp;What kind of dark rituals and/or orgies have you been preforming in this shoutbox for the past few hours? 
+			</div>
+			<div id="shout_48399">
+			December 05, 2010, 06:28:49 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=398">Tuggernuts</a> -&nbsp;Oh yar. <img src="index.php_files/sarcasm.gif" alt="Sarcasm" border="0"> 
+			</div>
+			<div id="shout_48398">
+			December 05, 2010, 06:21:21 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=17">Ryex</a> -&nbsp;this should be appended to that last shout of mine <img src="index.php_files/sarcasm.gif" alt="Sarcasm" border="0"> 
+			</div>
+			<div id="shout_48397">
+			December 05, 2010, 06:20:40 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=398">Tuggernuts</a> -&nbsp;No. So I am 85% straight(for the moment), and 15% confused(not for long). 
+			</div>
+			<div id="shout_48396">
+			December 05, 2010, 06:19:07 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=1">Blizzard</a> -&nbsp;OMG, you still haven't gotten out of the closet, have you? 
+			</div>
+			<div id="shout_48395">
+			December 05, 2010, 06:19:07 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=17">Ryex</a> -&nbsp;don't worry Blizz we just want to have your babies.&nbsp; but we can't because 90% of us are male&nbsp; 
+			</div>
+			<p><a href="http://forum.chaos-project.com/index.php?action=shout_archive">View All</a></p>			</td>
+					</tr>	<tr>
+						<td class="windowbg2" width="100%">
+		<form action="http://forum.chaos-project.com/index.php?action=shout" method="post">
+			<input value="http://forum.chaos-project.com/index.php/topic,1390.0.html" name="qstr" type="hidden">
+			<input value="" name="email" type="hidden">
+				<input value="Fantasist" name="displayname" type="hidden">
+				<input value="11" name="memberID" type="hidden">
+			<input style="width: 99%;" value="Message" name="message" maxlength="500" onfocus="if (this.value == 'Message')this.value=''" type="text"><br>
+			<input name="submit" value="Shout" type="submit">
+			<input name="sc" value="2eb3680a2d038bdb9bf6452e261a4814" type="hidden">
+		</form>		</td>
+					</tr>	</tbody></table>
+			</div>
+		</div><br>
+		<center>
+			<a href="http://www.rpgrevolution.com/" target="_blank"><img src="index.php_files/button.gif" alt="RPG RPG Revolution" border="0" height="31" width="88"></a>
+			<a href="http://www.hbgames.org/" target="_blank"><img src="index.php_files/hb_affiliate.png" alt="HB Games" border="0" height="31" width="88"></a>
+			<a href="http://www.sandboxgamemaker.com/" target="_blank"><img src="index.php_files/30rwn4g.png" alt="Sandbox Game Maker" border="0" height="31" width="88"></a>
+			<a href="http://www.lovelessgames.com/" target="_blank"><img src="index.php_files/banner3.png" alt="Loveless Entertainment" border="0" height="31" width="88"></a>
+		</center>
+	
+	  </div>
+	 </div>
+	</div>
+	<div id="footer-bgL">
+     <div id="footer-bgR">
+      <div id="footer">
+        <div id="footerarea">
+			<span class="smalltext" style="color: rgb(238, 238, 238);">
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana,Arial,sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1.12</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF © 2006-2009, Simple Machines LLC</a>
+		</span>
+			<br>Theme by <a href="http://www.chaos-project.com/"><b>Blizzard</b></a></span>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			window.addEventListener("load", smf_codeFix, false);
+			function smf_codeFix()
+			{
+				var codeFix = document.getElementsByTagName ? document.getElementsByTagName("div") : document.all.tags("div");
+
+				for (var i = 0; i < codeFix.length; i++)
+				{
+					if (codeFix[i].className == "code" && (codeFix[i].scrollWidth > codeFix[i].clientWidth || codeFix[i].clientWidth == 0))
+						codeFix[i].style.overflow = "scroll";
+				}
+			}
+		// ]]></script>
+		</div>
+	  </div>
+	 </div>
+	</div>
+	<div id="ajax_in_progress" style="display: none;">Loading...</div>
+	<div id="bottom-bgL">
+	 <div id="bottom-bgR">
+	  <div id="bottom">
+	  </div>
+	 </div>
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="index.php_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8585496-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

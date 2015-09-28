@@ -1,0 +1,42 @@
+ - I'm having a problem with the threat system here. After I implemented it into my game, I cannot force a monster to do a skill. Quite basically, the force action function doesn't work any more. Any suggestions?
+
+
+ - How difficult would it be to have an actor's threat reset to zero if they are incapacitated?  It sounds like it would be simple, but I'm still on the early side of learning this business.
+
+ - There is a workaround to this problem.  One, I tested the force action command out and it works for actors, but not enemies.  This is good, because enemies can have their action forced another way than the Force Action command, and that is this:
+
+Go to the Enemies tab in the database and enter whatever skill or action you want to force in their skill list and set the conditions to whatever turn you want to force that skill or action on.  Voila - same thing as the force action command.  And, luckily for us, the condition for using that skill can be a switch, so if you want more specific conditions, just make an event page for the troop, set the condition for the event to turn whatever-the-hell, make a conditional branch(es) for whatever special conditions you want to check, and then if those are met throw a switch which is then used as the condition for the monster using that skill.  Ta-da...
+
+
+ - 
+
+First of all, I have no real ruby scripting knowledge, I only know C! So I don't really know what I was doing, but anyway, looks like it worked.
+
+I think I found solution for the force action issue.
+
+First, look for def update_phase4_step2, which should be on line 259 if you don't modify anything from the script.
+Then substitute this:
+Code:
+
+  def update_phase4_step2
+    @active_battler.make_action if @active_battler.is_a?(Game_Enemy)
+    update_phase4_step2_choose_actor_realtime
+  end
+
+For this:
+Code:
+
+def update_phase4_step2
+    if $game_temp.forcing_battler == nil # If there is no force action this turn
+      @active_battler.make_action if @active_battler.is_a?(Game_Enemy)
+    end
+    update_phase4_step2_choose_actor_realtime
+  end
+
+
+I tried it on the demo, and looks like it worked. Didn't extensively tested it though...
+(On my project, it worked more or less, but probably because it's full of my own noob game_battler/scene_battle modifications...)
+
+So good luck with this xD
+
+EDIT: I just noticed. The force action has to be 'execute now'.

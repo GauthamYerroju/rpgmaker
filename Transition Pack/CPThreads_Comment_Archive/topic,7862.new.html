@@ -1,0 +1,751 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="[XP] Transition Pack Add-On">
+	<meta name="robots" content="noindex">
+	<meta name="keywords" content="Chaos Project, Blizz-ABS, best ABS, Tons of Add-ons, RPG Maker XP, RPG Maker, RMXP, RMVX, RPG Maker VX, RGSS, RGSS2, Ruby, RGSS Ruby, RGSS2 Ruby, RGSS Scripts, RGSS2 Scripts, Blizzard, The Legend of Lexima, Lexima, Chaos, XP, Transition, Pack, Add-On, Add-Ons, Authors, ForeverZer0, Version, 1.0, Type, Custom, Transitions, Key, Term, Misc, Add-on, Introduction, This, is, a, thread, to, post, additional, transition, use, with, Fantasist's, which, can, be, found, here, http://forum.chaos-project.com/index.php/topic,1390.0.html, I, would, normally, this, in, the, for, script, or, submit, it, see, if, could, added, but, original, auhor, of, no, longer, active, on, forum, Intructions, Adding, them, easy, just, follow, these, steps, Copy, and, paste, code, you, like, add, Find, call_effect, method, near, top, Create, new, line, before, end, case, statements, when, NUMBER, then, Follow, pattern, your, own, Code, METHOD_NAME, Repeat, process, second, part, time">
+	<script language="JavaScript" type="text/javascript" src="topic,7862.new_files/script.js"></script>
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var smf_theme_url = "http://forum.chaos-project.com/Themes/ChaosTrue5";
+		var smf_images_url = "http://forum.chaos-project.com/Themes/ChaosTrue5/images";
+		var smf_scripturl = "http://forum.chaos-project.com/index.php";
+		var smf_iso_case_folding = false;
+		var smf_charset = "UTF-8";
+	// ]]></script>
+	<title>[XP] Transition Pack Add-On</title>
+	<link rel="stylesheet" type="text/css" href="topic,7862.new_files/style.css">
+	<link rel="stylesheet" type="text/css" href="topic,7862.new_files/print.css" media="print">
+	<link rel="help" href="http://forum.chaos-project.com/index.php?action=help" target="_blank">
+	<link rel="search" href="http://forum.chaos-project.com/index.php?action=search">
+	<link rel="contents" href="http://forum.chaos-project.com/index.php">
+	<link rel="alternate" type="application/rss+xml" title="Chaos Project - RSS" href="http://forum.chaos-project.com/index.php?type=rss;action=.xml">
+	<link rel="prev" href="http://forum.chaos-project.com/index.php/topic,7862.0/prev_next,prev.html">
+	<link rel="next" href="http://forum.chaos-project.com/index.php/topic,7862.0/prev_next,next.html">
+	<link rel="index" href="http://forum.chaos-project.com/index.php/board,11.0.html"><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+
+	<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+		var current_header = false;
+
+		function shrinkHeader(mode)
+		{
+			smf_setThemeOption("collapse_header", mode ? 1 : 0, null, "686a7fa5c886a0a4790b55da56abe719");
+			document.getElementById("upshrink").src = smf_images_url + (mode ? "/upshrink2.gif" : "/upshrink.gif");
+
+			document.getElementById("upshrinkHeader").style.display = mode ? "none" : "";
+			document.getElementById("upshrinkHeader2").style.display = mode ? "none" : "";
+
+			current_header = mode;
+		}
+	// ]]></script>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			var current_header_sb = false;
+
+			function shrinkHeaderSB(mode)
+			{
+				smf_setThemeOption("collapse_header_sb", mode ? 1 : 0, null, "686a7fa5c886a0a4790b55da56abe719");
+				if (mode)
+				{
+					document.getElementById("upshrink_sbL").src = smf_images_url + "/cat-expandL.gif";
+					document.getElementById("upshrink_sbR").src = smf_images_url + "/cat-expandR.gif";
+					document.getElementById("upshrinkHeaderSB").style.display = "none";
+				}
+				else
+				{
+					document.getElementById("upshrink_sbL").src = smf_images_url + "/cat-collapseL.gif";
+					document.getElementById("upshrink_sbR").src = smf_images_url + "/cat-collapseR.gif";
+					document.getElementById("upshrinkHeaderSB").style.display = "";
+				}
+				current_header_sb = mode;
+			}
+		// ]]></script>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			var current_header_ic = false;
+
+			function shrinkHeaderIC(mode)
+			{
+				smf_setThemeOption("collapse_header_ic", mode ? 1 : 0, null, "686a7fa5c886a0a4790b55da56abe719");
+				if (mode)
+				{
+					document.getElementById("upshrink_icL").src = smf_images_url + "/cat-expandL.gif";
+					document.getElementById("upshrink_icR").src = smf_images_url + "/cat-expandR.gif";
+					document.getElementById("upshrinkHeaderIC").style.display = "none";
+				}
+				else
+				{
+					document.getElementById("upshrink_icL").src = smf_images_url + "/cat-collapseL.gif";
+					document.getElementById("upshrink_icR").src = smf_images_url + "/cat-collapseR.gif";
+					document.getElementById("upshrinkHeaderIC").style.display = "";
+				}
+				current_header_ic = mode;
+			}
+		// ]]></script>
+</head><body>
+  <div id="wrapper">
+	<div id="top-bgL">
+	 <div id="top-bgR">
+	  <div id="top">
+	  </div>
+	 </div>
+	</div>
+	<div id="header-bgL">
+	 <div id="header-bgR">
+     <div id="header">
+	  <div id="userarea">
+							<b>Hello Fantasist</b><br>you have <a href="http://forum.chaos-project.com/index.php?action=pm">153 messages</a>, 0 are new.<br>
+								<a href="http://forum.chaos-project.com/index.php?action=unread">Show unread posts since last visit.</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=unreadreplies">Show new replies to your posts.</a><br>
+	</div>
+	<div id="searcharea">
+		<form action="http://forum.chaos-project.com/index.php?action=search2" method="post" accept-charset="UTF-8">
+			<input name="search" value="Quick Search..." onfocus="this.value = '';" onblur="if(this.value=='') this.value='Quick Search...';" type="text"> 
+			<input name="topic" value="7862" type="hidden">
+		</form>
+	</div>
+		<a href="http://forum.chaos-project.com/index.php" title=""><span id="logo"></span></a>
+     </div> 		
+    </div>
+   </div>
+   <div id="body-bgL">
+	<div id="body-bgR">
+     <div id="toolbar">
+		
+        <div id="topmenu">
+           <ul><li><a href="http://www.chaos-project.com/"><span>Home</span></a></li><li><a class="current" href="http://forum.chaos-project.com/index.php"><span>Forum</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=chat"><span>Chat</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=help"><span>Help</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=search"><span>Search</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=calendar"><span>Calendar</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=profile"><span>Profile</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=pm"><span>My Messages</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=mlist"><span>Members</span></a></li><li><a href="http://forum.chaos-project.com/index.php?action=logout;sesc=686a7fa5c886a0a4790b55da56abe719"><span>Logout</span></a></li>
+		</ul>
+        </div>
+     </div>
+	</div>
+   </div>
+   <div id="body-bgL">
+	<div id="body-bgR">
+     <div id="bodyarea">
+		
+			
+				<b>News</b>: 
+				Make your MMO dream a reality! - <a href="http://forum.chaos-project.com/index.php?topic=3869.0">RPG Maker XP Online System</a>
+			
+		
+		<hr>
+		<div valign="middle" class="tborder" style="border-width: 0pt;" align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3852525040754896";
+/* 728x90, stvoreno 2008.10.07 */
+google_ad_slot = "5654937062";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript" src="topic,7862.new_files/show_ads.js">
+</script>
+
+		</div>
+		<hr id="horizontal">
+<a name="top"></a>
+<a name="msg126795"></a>
+<div><div class="nav" style="font-size: small; margin-bottom: 1ex; margin-top: 1ex;"><b><a href="http://forum.chaos-project.com/index.php" class="nav">Chaos Project</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php#2" class="nav">RPG Maker</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php/board,11.0.html" class="nav">RGSS / RGSS2 Scripts</a></b> (Moderators: <a href="http://forum.chaos-project.com/index.php?action=profile;u=17" title="Board Moderator">Ryex</a>, <a href="http://forum.chaos-project.com/index.php?action=profile;u=220" title="Board Moderator">game_guy</a>)&nbsp;&gt;&nbsp;Topic: <b><a href="http://forum.chaos-project.com/index.php/topic,7862.0.html" class="nav">[XP] Transition Pack Add-On</a></b></div></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="middletext" style="padding-bottom: 4px;" valign="bottom">Pages: [<b>1</b>] </td>
+		<td style="padding-right: 1ex;" align="right">
+			<div class="nav" style="margin-bottom: 2px;"> <a href="http://forum.chaos-project.com/index.php/topic,7862.0/prev_next,prev.html#new">« previous</a> <a href="http://forum.chaos-project.com/index.php/topic,7862.0/prev_next,next.html#new">next »</a></div>
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					
+		<td class="mirrortab_first">&nbsp;</td>
+		<td class="mirrortab_back"><a href="http://forum.chaos-project.com/index.php?action=post;topic=7862.0;num_replies=3">Reply</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=notify;sa=on;topic=7862.0;sesc=686a7fa5c886a0a4790b55da56abe719" onclick="return confirm('Are you sure you wish to enable notification of new replies for this topic?');">Notify</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=markasread;sa=topic;t=126955;topic=7862.0;sesc=686a7fa5c886a0a4790b55da56abe719">Mark unread</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=sendtopic;topic=7862.0">Send this topic</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=printpage;topic=7862.0" target="_blank">Print</a></td>
+		<td class="mirrortab_last">&nbsp;</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<table class="tborder" style="border-bottom: 0pt none;" border="0" cellpadding="3" cellspacing="0" width="100%">
+	<tbody><tr class="catbg3">
+		<td style="padding-left: 6px;" valign="middle" width="2%">
+		<img src="topic,7862.new_files/normal_post.gif" alt="" align="bottom">
+		</td>
+		<td width="13%"> Author</td>
+		<td style="padding-left: 6px;" id="top_subject" align="left" valign="middle" width="85%">
+				Topic: [XP] Transition Pack Add-On &nbsp;(Read 73 times)
+		</td>
+	</tr>
+</tbody></table>
+<form action="http://forum.chaos-project.com/index.php?action=quickmod2;topic=7862.0" method="post" accept-charset="UTF-8" name="quickModForm" id="quickModForm" style="margin: 0pt;" onsubmit="return in_edit_mode == 1 ? modify_save('686a7fa5c886a0a4790b55da56abe719') : confirm('Are you sure you want to do this?');">
+<table class="bordercolor" border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr><td style="padding: 1px 1px 0pt;">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=832" title="View the profile of ForeverZer0">ForeverZer0</a></b>
+							<div class="smalltext">
+								Celestial Dreamer<br>
+								<img src="topic,7862.new_files/star.gif" alt="*" border="0"><img src="topic,7862.new_files/star.gif" alt="*" border="0"><img src="topic,7862.new_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 69<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=832;topic=7862.0;m=126795;sesc=686a7fa5c886a0a4790b55da56abe719">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=832;topic=7862.0;m=126795;sesc=686a7fa5c886a0a4790b55da56abe719">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=832" title="Personal Message (Offline)"><img src="topic,7862.new_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="topic,7862.new_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 423<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="topic,7862.new_files/images.jpg" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=832"><img src="topic,7862.new_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:efreed09@gmail.com"><img src="topic,7862.new_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=832" title="Personal Message (Offline)"><img src="topic,7862.new_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,7862.msg126795.html#msg126795"><img src="topic,7862.new_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_126795">
+										<a href="http://forum.chaos-project.com/index.php/topic,7862.msg126795.html#msg126795">[XP] Transition Pack Add-On</a>
+									</div>
+									<div class="smalltext">« <b> on:</b> December 03, 2010, 10:53:03 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=126795;topic=7862.0;num_replies=3;sesc=686a7fa5c886a0a4790b55da56abe719" onclick="doQuote(126795, '686a7fa5c886a0a4790b55da56abe719'); return false;"><img src="topic,7862.new_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post"><div align="center"><span style="font-size: 24pt; line-height: 1.3em;"><b>Transition Pack Add-Ons</b></span><br><span style="font-size: 16pt; line-height: 1.3em;">Authors: ForeverZer0</span><br><span style="font-size: 16pt; line-height: 1.3em;">Version: 1.0</span><br><span style="font-size: 14pt; line-height: 1.3em;">Type: Custom Transitions</span><br>Key Term: Misc Add-on</div><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Introduction</b></span><br>This is a thread to post additional transition to use with Fantasist's Transition Pack, which can be found here: <a href="http://forum.chaos-project.com/index.php/topic,1390.0.html" target="_blank">http://forum.chaos-project.com/index.php/topic,1390.0.html</a><br><br>I
+ would normally post this in the thread for the script, or submit it to 
+see if it could be added, but the original auhor of the script is no 
+longer active on the forum.<br><br><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Intructions</b></span><br>Adding them is easy, just follow these steps:<br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li>Copy and paste the code for the transition you would like to add to the original script.</li><li>Find the "call_effect" method near the top of the script.</li><li>Create a new line before the "end" in the case statements ( "when NUMBER then .... ")</li><li>Follow the pattern, and add your own line, like this:</li></ul><div class="codeheader">Code:</div><div class="code"><pre style="margin-top: 0pt; display: inline;">when NUMBER then METHOD_NAME</pre></div><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li>Repeat this process in the second part of the "call_effect" method, but this time add a "(*args)" to the end of the line:</li></ul><div class="codeheader">Code:</div><div class="code"><pre style="margin-top: 0pt; display: inline;">when NUMBER then METHOD_NAME(*args)</pre></div><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li>You can now call the method with the number that you defined in the lines you added!</li></ul><hr><span style="font-size: 18pt; line-height: 1.3em;"><b>Submission</b></span><br>I
+ would be happy to include methods created by others to this thread. If 
+you have created a custom transition and would like to submit, please do
+ so, using this template:<br><br><div class="codeheader">Code:</div><div class="code"><pre style="margin-top: 0pt; display: inline;">[hr]<br>[b][u][color=green]&lt;NAME OF EFFECT&gt;[/color][/u][/b]<br><br>[spoiler][quote]&lt;CODE FOR THE METHOD GOES HERE, BUT USE CODE TAGS&gt;[/quote][/spoiler]<br><br>&lt;SMALL EXPLANATION OF WHAT IT DOES&gt;<br><br>[list]<br>[*][b]&lt;ARGUMENT1:&gt;[/b] &lt;EXPLAIN WHAT THE FIRST ARGUMENT DOES&gt;<br>[*][b]&lt;ARGUMENT2:&gt;[/b] &lt;EXPLAIN WHAT THE SECOND ARGUMENT DOES&gt;<br>[*]&lt;AND SO ON...&gt;<br>[/list]<br></pre></div><br><br><b><span style="text-decoration: underline;"><span style="color: yellow;">Tile Sprite Method</span></span></b><br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;"> &nbsp;def tile_sprites(tilesize)<br>&nbsp;&nbsp; &nbsp;tiles = []<br>&nbsp;&nbsp; &nbsp;# Iterate through main sprite, creating sprites for each square.<br>&nbsp;&nbsp; &nbsp;(0...@sprite.bitmap.width / tilesize).each {|x|<br>&nbsp;&nbsp; &nbsp; &nbsp;(0...@sprite.bitmap.height / tilesize).each {|y|<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;sprite = Sprite.new<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;sprite.x, sprite.y = x*tilesize, y*tilesize<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;sprite.bitmap = Bitmap.new(tilesize, tilesize)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;rect = Rect.new(sprite.x, sprite.y, tilesize, tilesize)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;sprite.bitmap.blt(0, 0, @sprite.bitmap, rect)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;tiles.push(sprite)<br>&nbsp;&nbsp; &nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp;@sprite.opacity = 0<br>&nbsp;&nbsp; &nbsp;return tiles<br>&nbsp;&nbsp;end<br></pre></div></div></div><br>This
+ is not a transition, but is a required method for some of them. The 
+transitions that require it will have a note stating that they do in the
+ description.<br><hr><b><span style="text-decoration: underline;"><span style="color: green;">Double Zoom</span></span></b><br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;"> &nbsp;def double_zoom(frames = 30, zoom1 = 12, zoom2 = 32)<br>&nbsp;&nbsp; &nbsp;# Calculate the stages. Account for final zoom being longer.<br>&nbsp;&nbsp; &nbsp;stage3 = (frames * (zoom1.to_f / zoom2)).round<br>&nbsp;&nbsp; &nbsp;stages = [(frames - stage3) / 2, (frames - stage3) / 2, stage3]<br>&nbsp;&nbsp; &nbsp;# Calculate the zoom rates to apply each frame, for each stage.<br>&nbsp;&nbsp; &nbsp;zoom_rates, opacity_rate = [zoom1-1, -zoom1+1, zoom2], (255 / frames.to_f)<br>&nbsp;&nbsp; &nbsp;zoom_rates.each_index {|i| zoom_rates[i] /= stages[i].to_f }<br>&nbsp;&nbsp; &nbsp;# Initialize local variable to keep track of current stage being executed.<br>&nbsp;&nbsp; &nbsp;current_stage = 0<br>&nbsp;&nbsp; &nbsp;3.times do<br>&nbsp;&nbsp; &nbsp; &nbsp;# Iterate each stage, using the calculated rates for each one.<br>&nbsp;&nbsp; &nbsp; &nbsp;stages[current_stage].times do<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;@sprite.zoom_x += zoom_rates[current_stage]<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;@sprite.zoom_y += zoom_rates[current_stage]<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;@sprite.opacity -= opacity_rate<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Graphics.update<br>&nbsp;&nbsp; &nbsp; &nbsp;end<br>&nbsp;&nbsp; &nbsp; &nbsp;current_stage += 1<br>&nbsp;&nbsp; &nbsp;end<br>&nbsp;&nbsp;end<br></pre></div></div></div><br>Zooms in, then back out, then in again. Both zoom levels are configurable.<br><br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li><b>FRAMES:</b> Total number of frames the transition will take.<br></li><li><b>ZOOM1:</b> The target zoom level of the first zoom.<br></li><li><b>ZOOM2:</b> The target zoom of the second zoom.<br></li></ul><hr><b><span style="text-decoration: underline;"><span style="color: green;">Retro Final Fantasy</span></span></b><br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;"> &nbsp;def ff_IV_style(zoom1 = 1.2, zoom2 = 32)<br>&nbsp;&nbsp; &nbsp;# Set number of frames and zoom rates for each stage.<br>&nbsp;&nbsp; &nbsp;stages = [4, 4, 4, 4, 20]<br>&nbsp;&nbsp; &nbsp;zooms = [zoom1, -zoom1, zoom1, -zoom1, zoom2]<br>&nbsp;&nbsp; &nbsp;zooms.each_index {|i| zooms[i] /= stages[i].to_f }<br>&nbsp;&nbsp; &nbsp;current_stage = 0<br>&nbsp;&nbsp; &nbsp;5.times do<br>&nbsp;&nbsp; &nbsp; &nbsp;# Begin processing.<br>&nbsp;&nbsp; &nbsp; &nbsp;stages[current_stage].times do<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;@sprite.zoom_x += zooms[current_stage]<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;@sprite.zoom_y += zooms[current_stage]<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;@sprite.opacity -= 12 if current_stage == 4<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Graphics.update<br>&nbsp;&nbsp; &nbsp; &nbsp;end<br>&nbsp;&nbsp; &nbsp; &nbsp;# Increase current stage.<br>&nbsp;&nbsp; &nbsp; &nbsp;current_stage += 1<br>&nbsp;&nbsp; &nbsp;end<br>&nbsp;&nbsp;end<br></pre></div></div></div><br>Classic
+ transition used in early SNES Final Fantasy games. Similiar to the 
+double zoom, does a quick double stammer, then zooms in all the way very
+ quickly.<br><br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li><b>ZOOM1:</b> Level of zoom used in the initial stutter.<br></li><li><b>ZOOM2:</b> Level of zoom for the final zoom.<br></li></ul><hr><b><span style="text-decoration: underline;"><span style="color: green;">Downward Spiral</span></span></b><br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;"> &nbsp;def downward_spiral(frames = 40, rotation_speed = 15)<br>&nbsp;&nbsp; &nbsp;# Calculate the zoom to subtract each frame.<br>&nbsp;&nbsp; &nbsp;zoom, opacity = 1.0 / frames, 128.0 / frames<br>&nbsp;&nbsp; &nbsp;frames.times do<br>&nbsp;&nbsp; &nbsp; &nbsp;# Begin processing.<br>&nbsp;&nbsp; &nbsp; &nbsp;@sprite.zoom_x -= zoom<br>&nbsp;&nbsp; &nbsp; &nbsp;@sprite.zoom_y -= zoom<br>&nbsp;&nbsp; &nbsp; &nbsp;@sprite.opacity -= opacity<br>&nbsp;&nbsp; &nbsp; &nbsp;@sprite.angle += rotation_speed<br>&nbsp;&nbsp; &nbsp; &nbsp;Graphics.update<br>&nbsp;&nbsp; &nbsp;end<br>&nbsp;&nbsp;end<br></pre></div></div></div><br>Screen rotates as it falls fading away.<br><br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li><b>FRAMES:</b> Total number of frames the transition takes to fall away completely.<br></li><li><b>ROTATION SPEED:</b> Defines how fast the screen rotates in degrees.<br></li></ul><hr><b><span style="text-decoration: underline;"><span style="color: green;">Blackhole</span></span></b><br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;"> &nbsp;def blackhole(speed = 4, tilesize = 12, source = [320, 240])<br>&nbsp;&nbsp; &nbsp;# Initialize squares array to hold each sprite.<br>&nbsp;&nbsp; &nbsp;tiles = tile_sprites(tilesize)<br>&nbsp;&nbsp; &nbsp;# Make each sprite slightly smaller than full size.<br>&nbsp;&nbsp; &nbsp;tiles.each {|tile| tile.zoom_x = tile.zoom_y = 0.85 }<br>&nbsp;&nbsp; &nbsp;# Begin looping until all sprites have been disposed.<br>&nbsp;&nbsp; &nbsp;until tiles.compact == []<br>&nbsp;&nbsp; &nbsp; &nbsp;# Iterate each tiles.<br>&nbsp;&nbsp; &nbsp; &nbsp;tiles.each_index {|i|<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;next if tiles[i] == nil<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Get distance of this sprite from the source for each axis.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;sx = source[0] - tiles[i].x<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;sy = source[1] - tiles[i].y<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Calculate total distance and set base speed for each axis.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;dist = Math.hypot(sx, sy).to_f<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;move_x = (dist / (sx == 0 ? 1 : sx)) <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;move_y = (dist / (sy == 0 ? 1 : sy))<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Add a little randomness to the mix.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;move_x += move_x &lt; 0 ? -rand(speed) : rand(speed)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;move_y += move_y &lt; 0 ? -rand(speed) : rand(speed)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Apply movement.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;tiles[i].x += move_x<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;tiles[i].y += move_y<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;tiles[i].angle += rand(20)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# If tile is within its own size from source, dispose it.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;if sx.abs &lt;= tilesize &amp;&amp; sy.abs &lt;= tilesize<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tiles[i].bitmap.dispose<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tiles[i] = tiles[i].dispose<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;end<br>&nbsp;&nbsp; &nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp; &nbsp;Graphics.update<br>&nbsp;&nbsp; &nbsp;end<br>&nbsp;&nbsp;end<br></pre></div></div></div><br>Screen is broken into small pieces, which are then sucked into a specific point on the screen.<br><br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li><b>SPEED:</b> Defines how fast the pieces move to the SOURCE.<br></li><li><b>TILESIZE:</b> Size, in pixels, of the width and height that the tiles that the screen is broken into.<br></li><li><b>SOURCE:</b> A two element array that defines the X and Y, in pixels, of the origin point of the "blackhole". <br></li></ul><div align="center"><b><span style="color: red;">REQUIRES "tile_sprite" METHOD. (see above)</span></b></div><hr><b><span style="text-decoration: underline;"><span style="color: green;">Wave Distort</span></span></b><br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;"> &nbsp;def wave_distort(frames = 60, direction = 2, power = 0.4)<br>&nbsp;&nbsp; &nbsp;radius, tiles = 0, tile_sprites(16)<br>&nbsp;&nbsp; &nbsp;# Define starting point for zoom, depending on direction.<br>&nbsp;&nbsp; &nbsp;origin = case direction<br>&nbsp;&nbsp; &nbsp;when 2 then [@sprite.bitmap.width / 2, @sprite.bitmap.height]<br>&nbsp;&nbsp; &nbsp;when 4 then [0, @sprite.bitmap.height / 2]<br>&nbsp;&nbsp; &nbsp;when 6 then [@sprite.bitmap.width, @sprite.bitmap.height / 2]<br>&nbsp;&nbsp; &nbsp;when 8 then [@sprite.bitmap.width / 2, 0]<br>&nbsp;&nbsp; &nbsp;end<br>&nbsp;&nbsp; &nbsp;# Initialize local variable for the rate the radius will increase.<br>&nbsp;&nbsp; &nbsp;rate = Math.hypot(@sprite.bitmap.width, @sprite.bitmap.height) / frames<br>&nbsp;&nbsp; &nbsp;# Begin processing.<br>&nbsp;&nbsp; &nbsp;frames.times do<br>&nbsp;&nbsp; &nbsp; &nbsp;# Iterate through each tile, calculating distance from focal point.<br>&nbsp;&nbsp; &nbsp; &nbsp;tiles.each {|tile|<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;dist = Math.hypot((origin[0] - tile.x), (origin[1] - tile.y))<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Zoom tile on one axis, depending on direction.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;next if radius &lt; dist <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;[4, 6].include?(direction) ? tile.zoom_x += power : tile.zoom_y += power<br>&nbsp;&nbsp; &nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp; &nbsp;# Increase radius for next iteration.<br>&nbsp;&nbsp; &nbsp; &nbsp;radius += rate<br>&nbsp;&nbsp; &nbsp; &nbsp;Graphics.update<br>&nbsp;&nbsp; &nbsp;end<br>&nbsp;&nbsp; &nbsp;# Dispose each bitmap and sprite used for the tiles.<br>&nbsp;&nbsp; &nbsp;tiles.each {|tile| tile.bitmap.dispose; tile.dispose }<br>&nbsp;&nbsp;end<br></pre></div></div></div><br>Causes the screen to distort in a "wave" effect.<br><br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li><b>FRAMES:</b> Total number of frames the transition will take.<br></li><li><b>DIRECTION:</b> Corresponds to the direction the wave comes from. (2 = down, 4 = left, 6 = right, 8 = up) <br></li><li><b>POWER:</b> The level of the distort. Should be a small number between 0 and 1.<br></li></ul><div align="center"><b><span style="color: red;">REQUIRES "tile_sprite" METHOD. (see above)</span></b></div><hr><b><span style="text-decoration: underline;"><span style="color: green;">Radial Break</span></span></b><br><br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;"><div class="codeheader">Code:</div><div style="overflow: scroll;" class="code"><pre style="margin-top: 0pt; display: inline;"> &nbsp;def radial_break(frames = 60, tilesize = 16, direction = 2, speed = 8)<br>&nbsp;&nbsp; &nbsp;radius, tiles = 0, tile_sprites(tilesize)<br>&nbsp;&nbsp; &nbsp;# Define starting point for zoom, depending on direction.<br>&nbsp;&nbsp; &nbsp;origin = case direction<br>&nbsp;&nbsp; &nbsp;when 2 then [@sprite.bitmap.width / 2, @sprite.bitmap.height]<br>&nbsp;&nbsp; &nbsp;when 4 then [0, @sprite.bitmap.height / 2]<br>&nbsp;&nbsp; &nbsp;when 6 then [@sprite.bitmap.width, @sprite.bitmap.height / 2]<br>&nbsp;&nbsp; &nbsp;when 8 then [@sprite.bitmap.width / 2, 0]<br>&nbsp;&nbsp; &nbsp;end<br>&nbsp;&nbsp; &nbsp;# Initialize local variable for the rate the radius will increase.<br>&nbsp;&nbsp; &nbsp;rate = Math.hypot(@sprite.bitmap.width, @sprite.bitmap.height) / frames<br>&nbsp;&nbsp; &nbsp;# Begin processing.<br>&nbsp;&nbsp; &nbsp;until tiles == []<br>&nbsp;&nbsp; &nbsp; &nbsp;tiles.compact!<br>&nbsp;&nbsp; &nbsp; &nbsp;# Iterate through each tile, calculating distance from focal point.<br>&nbsp;&nbsp; &nbsp; &nbsp;tiles.each_index {|i|<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;dist = Math.hypot((origin[0] - tiles[i].x), (origin[1] - tiles[i].y))<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Zoom tile on one axis, depending on direction.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;next if radius &lt; dist <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Get distance of this sprite from the source for each axis.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;sx = origin[0] - tiles[i].x<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;sy = origin[1] - tiles[i].y<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Calculate total distance and set base speed for each axis.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;dist = Math.hypot(sx, sy).to_f<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;move_x = (dist / (sx == 0 ? 1 : sx)) <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;move_y = (dist / (sy == 0 ? 1 : sy))<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Add a little randomness to the mix.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;move_x += move_x &lt; 0 ? -rand(speed) : rand(speed)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;move_y += move_y &lt; 0 ? -rand(speed) : rand(speed)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Half distance of one axis, depending on rate.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;[2, 8].include?(direction) ? move_x /= 2 : move_y /= 2<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# Apply movement.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;tiles[i].x += move_x<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;tiles[i].y += move_y<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;angle = (tiles[i].object_id % 2 == 0) ? rand(25) : -rand(25) <br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;tiles[i].angle += (angle + 5)<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;# If tile is within its own size from source, dispose it.<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;if sx.abs &lt;= tilesize || sy.abs &lt;= tilesize<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tiles[i].bitmap.dispose<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tiles[i] = tiles[i].dispose<br>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;end<br>&nbsp;&nbsp; &nbsp; &nbsp;}<br>&nbsp;&nbsp; &nbsp; &nbsp;# Increase radius for next iteration.<br>&nbsp;&nbsp; &nbsp; &nbsp;radius += rate / 2<br>&nbsp;&nbsp; &nbsp; &nbsp;Graphics.update<br>&nbsp;&nbsp; &nbsp;end<br>&nbsp;&nbsp;end<br></pre></div></div></div><br>Screen breaks into hundreds of pieces in a wave effect, and then move towards the source of the wave in a random pattern.<br><br><ul style="margin-top: 0pt; margin-bottom: 0pt;"><li><b>FRAMES:</b> Number of frames the transition will take. (approx.)<br></li><li><b>TILESIZE:</b> Size, in pixels, of the width and height that the tiles that the screen is broken into.<br></li><li><b>DIRECTION:</b> Corresponds to the direction the wave comes from. (2 = down, 4 = left, 6 = right, 8 = up) <br></li><li><b>SPEED:</b> Speed at which the pieces move.<br></li></ul><div align="center"><b><span style="color: red;">REQUIRES "tile_sprite" METHOD. (see above)</span></b></div></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_126795" valign="bottom">
+									« <i>Last Edit: <b>Today</b> at 12:36:29 AM by ForeverZer0</i> »
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=7862.0;msg=126795">Report to moderator</a> &nbsp;
+									<img src="topic,7862.new_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature">I own Niche's soul. You know it's true because my signature says it.<br><br>Some of my scripts:<br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;">WeatherCreator<br>Custom Resolution<br>Run-Time Script Caller<br>Console Output<br>Zer0 CMS<br>Complete Climate and Time System (CCTS)<br>Zer0 Add-On Collection<br>Advanced Weather<br>Dynamic Gardening<br>Custom Event Triggers<br>Battle Arena<br>Blacksmith System<br>Hunger/Thirst<br>Journal<br>Self-Switch Debug Mode<br>Advanced Title Screen<br>Multiple Message Windows (Non-SDK)<br>Message Choice Window<br>Script-Command Messages<br></div></div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg126889"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=1" title="View the profile of Blizzard">Blizzard</a></b>
+							<div class="smalltext">
+								Where am I?<br>
+								Administrator<br>
+								Has over 9000 posts<br>
+								<img src="topic,7862.new_files/staradmin.gif" alt="*" border="0"><img src="topic,7862.new_files/staradmin.gif" alt="*" border="0"><img src="topic,7862.new_files/staradmin.gif" alt="*" border="0"><br>
+								<br>
+								Level: 410<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=1;topic=7862.0;m=126889;sesc=686a7fa5c886a0a4790b55da56abe719">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=1;topic=7862.0;m=126889;sesc=686a7fa5c886a0a4790b55da56abe719">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Offline)"><img src="topic,7862.new_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="topic,7862.new_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 11883<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="topic,7862.new_files/18190maria.jpg" alt="" class="avatar" border="0"></div><br>
+								I like random girls.<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=1"><img src="topic,7862.new_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://www.chaos-project.com/" title="You're already on it. (-_-')" target="_blank"><img src="topic,7862.new_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:boris.blizzard@gmail.com"><img src="topic,7862.new_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=1" title="Personal Message (Offline)"><img src="topic,7862.new_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,7862.msg126889.html#msg126889"><img src="topic,7862.new_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_126889">
+										<a href="http://forum.chaos-project.com/index.php/topic,7862.msg126889.html#msg126889">Re: Transition Pack Add-On</a>
+									</div>
+									<div class="smalltext">« <b>Reply #1 on:</b> December 05, 2010, 04:27:37 PM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=126889;topic=7862.0;num_replies=3;sesc=686a7fa5c886a0a4790b55da56abe719" onclick="doQuote(126889, '686a7fa5c886a0a4790b55da56abe719'); return false;"><img src="topic,7862.new_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">You forgot to fill out the topic header. D:</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_126889" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=7862.1;msg=126889">Report to moderator</a> &nbsp;
+									<img src="topic,7862.new_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;"><b>I have retired from RMXP! Please do not send me PMs or e-Mails asking for support!</b></span><br><br><div class="quoteheader">Quote from: Bender</div><div class="quote">Ahhh, what an awful dream. Ones and zeroes everywhere... and I thought I saw a two.</div><div class="quoteheader">Quote from: Fry</div><div class="quote">It was just a dream, Bender. There's no such thing as two.</div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg126944"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=832" title="View the profile of ForeverZer0">ForeverZer0</a></b>
+							<div class="smalltext">
+								Celestial Dreamer<br>
+								<img src="topic,7862.new_files/star.gif" alt="*" border="0"><img src="topic,7862.new_files/star.gif" alt="*" border="0"><img src="topic,7862.new_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 69<br>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=applaud;uid=832;topic=7862.0;m=126944;sesc=686a7fa5c886a0a4790b55da56abe719">[Level++]</a>
+								<a href="http://forum.chaos-project.com/index.php?action=modifykarma;sa=smite;uid=832;topic=7862.0;m=126944;sesc=686a7fa5c886a0a4790b55da56abe719">[Level--]</a><br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=832" title="Personal Message (Offline)"><img src="topic,7862.new_files/useroff.gif" alt="Offline" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Offline</span><br><br>
+								Gender: <img src="topic,7862.new_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 423<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="topic,7862.new_files/images.jpg" alt="" class="avatar" border="0"></div><br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=832"><img src="topic,7862.new_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="mailto:efreed09@gmail.com"><img src="topic,7862.new_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=832" title="Personal Message (Offline)"><img src="topic,7862.new_files/im_off.gif" alt="Personal Message (Offline)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,7862.msg126944.html#msg126944"><img src="topic,7862.new_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_126944">
+										<a href="http://forum.chaos-project.com/index.php/topic,7862.msg126944.html#msg126944">Re: Transition Pack Add-On</a>
+									</div>
+									<div class="smalltext">« <b>Reply #2 on:</b> <b>Today</b> at 12:31:42 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=126944;topic=7862.0;num_replies=3;sesc=686a7fa5c886a0a4790b55da56abe719" onclick="doQuote(126944, '686a7fa5c886a0a4790b55da56abe719'); return false;"><img src="topic,7862.new_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post">You want me to format this for the database?<br><br>I
+ didn't really "forget" to do it, I just wasn't sure if this would be 
+the type of thing to go to the database. I shall make it look it nice 
+for you though...&nbsp; <img src="topic,7862.new_files/wink.gif" alt="Wink" border="0"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_126944" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=7862.2;msg=126944">Report to moderator</a> &nbsp;
+									<img src="topic,7862.new_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">Logged</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature">I own Niche's soul. You know it's true because my signature says it.<br><br>Some of my scripts:<br><div class="spoiler"><div class="spoilerheader"><input class="spoilerbutton" value="Spoiler" onclick="n = this.parentNode.parentNode.lastChild;if(n.style.display == 'none') {n.style.display = 'block';} else {n.style.display = 'none';} return false;" type="button"> (click to show/hide)</div><div class="spoilerbody" style="display: none;">WeatherCreator<br>Custom Resolution<br>Run-Time Script Caller<br>Console Output<br>Zer0 CMS<br>Complete Climate and Time System (CCTS)<br>Zer0 Add-On Collection<br>Advanced Weather<br>Dynamic Gardening<br>Custom Event Triggers<br>Battle Arena<br>Blacksmith System<br>Hunger/Thirst<br>Journal<br>Self-Switch Debug Mode<br>Advanced Title Screen<br>Multiple Message Windows (Non-SDK)<br>Message Choice Window<br>Script-Command Messages<br></div></div></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 1px 1px 0pt;">
+		<a name="msg126953"></a><a name="new"></a>
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+			<tbody><tr class="postsplitter"><td></td></tr>
+			<tr><td class="windowbg">
+				<table style="table-layout: fixed; border-right: 1px none;" cellpadding="5" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td rowspan="2" style="overflow: hidden;" valign="top" width="16%">
+							<b><a href="http://forum.chaos-project.com/index.php?action=profile;u=11" title="View the profile of Fantasist">Fantasist</a></b>
+							<div class="smalltext">
+								Astral Trancist<br>
+								<img src="topic,7862.new_files/star.gif" alt="*" border="0"><img src="topic,7862.new_files/star.gif" alt="*" border="0"><img src="topic,7862.new_files/star.gif" alt="*" border="0"><img src="topic,7862.new_files/star.gif" alt="*" border="0"><img src="topic,7862.new_files/star.gif" alt="*" border="0"><br>
+								<br>
+								Level: 124<br>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="topic,7862.new_files/useron.gif" alt="Online" style="margin-top: 2px;" border="0"></a><span class="smalltext"> Online</span><br><br>
+								Gender: <img src="topic,7862.new_files/Male.gif" alt="Male" border="0"><br>
+								Posts: 1935<br>
+								<br>
+								<div style="overflow: auto; width: 100%;"><img src="topic,7862.new_files/aku_avatar-1.png" alt="" class="avatar" border="0"></div><br>
+								Wretched Samurai! Once again you have eluded me!!<br>
+								<br>
+								
+								
+								
+								<br>
+								<a href="http://forum.chaos-project.com/index.php?action=profile;u=11"><img src="topic,7862.new_files/profile_sm.gif" alt="View Profile" title="View Profile" border="0"></a>
+								<a href="http://gtmstechblog.wordpress.com/" title="Gautham's (alias Fantasist's) Tech Blog" target="_blank"><img src="topic,7862.new_files/www_sm.gif" alt="WWW" border="0"></a>
+								<a href="mailto:thefantasist@yahoo.com"><img src="topic,7862.new_files/email_sm.gif" alt="Email" title="Email" border="0"></a>
+								<a href="http://forum.chaos-project.com/index.php?action=pm;sa=send;u=11" title="Personal Message (Online)"><img src="topic,7862.new_files/im_on.gif" alt="Personal Message (Online)" border="0"></a>
+							</div>
+						</td>
+						<td height="100%" valign="top" width="85%">
+							<table border="0" width="100%"><tbody><tr>
+								<td valign="middle"><a href="http://forum.chaos-project.com/index.php/topic,7862.msg126953.html#msg126953"><img src="topic,7862.new_files/xx.gif" alt="" border="0"></a></td>
+								<td valign="middle">
+									<div style="font-weight: bold;" id="subject_126953">
+										<a href="http://forum.chaos-project.com/index.php/topic,7862.msg126953.html#msg126953">Re: [XP] Transition Pack Add-On</a>
+									</div>
+									<div class="smalltext">« <b>Reply #3 on:</b> <b>Today</b> at 01:48:55 AM »</div></td>
+								<td style="font-size: smaller;" align="right" height="20" valign="bottom">
+					<a href="http://forum.chaos-project.com/index.php?action=post;quote=126953;topic=7862.0;num_replies=3;sesc=686a7fa5c886a0a4790b55da56abe719" onclick="doQuote(126953, '686a7fa5c886a0a4790b55da56abe719'); return false;"><img src="topic,7862.new_files/quote.gif" alt="Reply with quote" align="middle"><b>Quote</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=post;msg=126953;topic=7862.0;sesc=686a7fa5c886a0a4790b55da56abe719"><img src="topic,7862.new_files/modify.gif" alt="Modify message" align="middle"><b>Modify</b></a>
+					<a href="http://forum.chaos-project.com/index.php?action=deletemsg;topic=7862.0;msg=126953;sesc=686a7fa5c886a0a4790b55da56abe719" onclick="return confirm('Remove this message?');"><img src="topic,7862.new_files/delete.gif" alt="Remove message" align="middle"><b>Remove</b></a>
+									<input name="msgs[]" value="126953" class="check" type="checkbox">
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="post" id="msg_126953">Awesome, man! <img src="topic,7862.new_files/laugh.gif" alt=":D" border="0">&nbsp; *levels up*<br>I've edited the first post in my topic to point here. Nice job <img src="topic,7862.new_files/happy.gif" alt="Happy" border="0"></div>
+							<img src="topic,7862.new_files/modify_inline.gif" alt="" id="modify_button_126953" style="cursor: pointer;" onclick="modify_msg('126953', '686a7fa5c886a0a4790b55da56abe719')" align="right">
+						</td>
+					</tr>
+					<tr>
+						<td class="smalltext" valign="bottom" width="85%">
+							<table style="table-layout: fixed;" border="0" width="100%"><tbody><tr>
+								<td colspan="2" class="smalltext" width="100%">
+								</td>
+							</tr><tr>
+								<td class="smalltext" id="modified_126953" valign="bottom">
+								</td>
+								<td class="smalltext" align="right" valign="bottom">
+									<a href="http://forum.chaos-project.com/index.php?action=reporttm;topic=7862.3;msg=126953">Report to moderator</a> &nbsp;
+									<img src="topic,7862.new_files/ip.gif" alt="" border="0">
+									<a href="http://forum.chaos-project.com/index.php?action=helpadmin;help=see_member_ip" onclick="return reqWin(this.href);" class="help">183.83.106.106</a>
+								</td>
+							</tr></tbody></table>
+							<hr class="hrcolor" size="1" width="100%">
+							<div class="signature"><span style="color: red;">I have stopped developing code for RMXP. And as of now, I am no longer going to update or even properly support my scripts.</span>
+ I just might, but don't count on it. So you collectors out there might 
+want to download any of my demos and stuff before Sendspace deletes them
+ from their server.<br><br>I hate to leave my work unsupported, but I'm just not willing to spend my mental resources on RGSS anymore. So, <b>I welcome the other scripters here to use/adapt my scripts and post their modified versions if they want.</b><br><br>Sorry and thank you.<br><br><a href="http://fantasist.mypersonality.info/" target="_blank"><img src="topic,7862.new_files/161926.png" alt="" border="0"></a></div>
+						</td>
+					</tr>
+				</tbody></table>
+			</td></tr>
+		</tbody></table>
+	</td></tr>
+	<tr><td style="padding: 0pt 0pt 1px;"></td></tr>
+</tbody></table>
+<a name="lastPost"></a>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td class="middletext">Pages: [<b>1</b>] </td>
+		<td style="padding-right: 1ex;" align="right">
+			<table cellpadding="0" cellspacing="0">
+				<tbody><tr>
+					
+		<td class="maintab_first">&nbsp;</td>
+		<td class="maintab_back"><a href="http://forum.chaos-project.com/index.php?action=post;topic=7862.0;num_replies=3">Reply</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=notify;sa=on;topic=7862.0;sesc=686a7fa5c886a0a4790b55da56abe719" onclick="return confirm('Are you sure you wish to enable notification of new replies for this topic?');">Notify</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=markasread;sa=topic;t=126955;topic=7862.0;sesc=686a7fa5c886a0a4790b55da56abe719">Mark unread</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=sendtopic;topic=7862.0">Send this topic</a> &nbsp;|&nbsp; <a href="http://forum.chaos-project.com/index.php?action=printpage;topic=7862.0" target="_blank">Print</a></td>
+		<td class="maintab_last">&nbsp;</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+</tbody></table>
+<script language="JavaScript" type="text/javascript" src="topic,7862.new_files/xml_topic.js"></script>
+<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+	quickReplyCollapsed = false;
+
+	smf_topic = 7862;
+	smf_start = 0;
+	smf_show_modify = 1;
+
+	// On quick modify, this is what the body will look like.
+	var smf_template_body_edit = '<div id="error_box" style="padding: 4px; color: red;"></div><textarea class="editor" name="message" rows="12" style="width: 94%; margin-bottom: 10px;">%body%</textarea><br /><input type="hidden" name="sc" value="686a7fa5c886a0a4790b55da56abe719" /><input type="hidden" name="topic" value="7862" /><input type="hidden" name="msg" value="%msg_id%" /><div style="text-align: center;"><input type="submit" name="post" value="Save" onclick="return modify_save(\'686a7fa5c886a0a4790b55da56abe719\');" accesskey="s" />&nbsp;&nbsp;<input type="submit" name="cancel" value="Cancel" onclick="return modify_cancel();" /></div>';
+
+	// And this is the replacement for the subject.
+	var smf_template_subject_edit = '<input type="text" name="subject" value="%subject%" size="60" style="width: 99%;"  maxlength="80" />';
+
+	// Restore the message to this after editing.
+	var smf_template_body_normal = '%body%';
+	var smf_template_subject_normal = '<a href="http://forum.chaos-project.com/index.php/topic,7862.msg%msg_id%.html#msg%msg_id%">%subject%</a>';
+	var smf_template_top_subject = "Topic: %subject% &nbsp;(Read 73 times)"
+
+	if (window.XMLHttpRequest)
+		showModifyButtons();
+// ]]></script>
+<table style="margin-bottom: 1ex;" border="0" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+				<td valign="top"><div class="nav" style="font-size: small; margin-bottom: 1ex; margin-top: 1ex;"><b><a href="http://forum.chaos-project.com/index.php" class="nav">Chaos Project</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php#2" class="nav">RPG Maker</a></b>&nbsp;&gt;&nbsp;<b><a href="http://forum.chaos-project.com/index.php/board,11.0.html" class="nav">RGSS / RGSS2 Scripts</a></b> (Moderators: <a href="http://forum.chaos-project.com/index.php?action=profile;u=17" title="Board Moderator">Ryex</a>, <a href="http://forum.chaos-project.com/index.php?action=profile;u=220" title="Board Moderator">game_guy</a>)&nbsp;&gt;&nbsp;Topic: <b><a href="http://forum.chaos-project.com/index.php/topic,7862.0.html" class="nav">[XP] Transition Pack Add-On</a></b></div></td> 
+				<td class="nav" align="right" valign="top"> <a href="http://forum.chaos-project.com/index.php/topic,7862.0/prev_next,prev.html#new">« previous</a> <a href="http://forum.chaos-project.com/index.php/topic,7862.0/prev_next,next.html#new">next »</a></td>
+		</tr>
+</tbody></table>
+	<table style="margin-left: 1ex;" border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr>
+			
+		<td class="mirrortab_first">&nbsp;</td>
+		<td class="mirrortab_back"><a href="javascript:document.quickModForm.submit();" onclick="return confirm('Are you sure you want to do this?');" id="quickmodSubmit">Delete Selected</a></td>
+		<td class="mirrortab_last">&nbsp;</td>
+		</tr>
+	</tbody></table>
+	<input name="sc" value="686a7fa5c886a0a4790b55da56abe719" type="hidden">
+</form>
+<div class="tborder"><div class="titlebg2" style="padding: 4px;" align="right">
+	<form action="http://forum.chaos-project.com/index.php" method="get" accept-charset="UTF-8" style="padding: 0pt; margin: 0pt;">
+		<span class="smalltext">Jump to:</span>
+		<select name="jumpto" id="jumpto" onchange="if (this.selectedIndex > 0 &amp;&amp; this.options[this.selectedIndex].value) window.location.href = smf_scripturl + this.options[this.selectedIndex].value.substr(smf_scripturl.indexOf('?') == -1 || this.options[this.selectedIndex].value.substr(0, 1) != '?' ? 0 : 1);">
+			<option value="">Please select a destination:</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#1">Community</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=1.0"> =&gt; News/Suggestions/Feedback</option>
+			<option value="?board=2.0"> =&gt; Welcome!</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#2">RPG Maker</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=5.0"> =&gt; General RPG Maker Discussion</option>
+			<option value="?board=6.0"> ===&gt; General Troubleshooting/Help</option>
+			<option value="?board=7.0"> =&gt; Tutorials</option>
+			<option value="?board=8.0"> ===&gt; Tutorial Database</option>
+			<option value="?board=28.0"> ===&gt; Tutorial Requests</option>
+			<option value="?board=9.0"> =&gt; Event Systems</option>
+			<option value="?board=10.0"> ===&gt; Event System Database</option>
+			<option value="?board=35.0"> ===&gt; Event System Troubleshooting</option>
+			<option value="?board=29.0"> ===&gt; Event System Requests</option>
+			<option value="?board=11.0" selected="selected"> =&gt; RGSS / RGSS2 Scripts</option>
+			<option value="?board=12.0"> ===&gt; RMXP Script Database</option>
+			<option value="?board=33.0"> ===&gt; RMVX Script Database</option>
+			<option value="?board=34.0"> ===&gt; Script Troubleshooting</option>
+			<option value="?board=30.0"> ===&gt; Script Requests</option>
+			<option value="?board=13.0"> =&gt; Projects/Games</option>
+			<option value="?board=14.0"> ===&gt; New Projects</option>
+			<option value="?board=15.0"> ===&gt; Project/Testers Recruitment</option>
+			<option value="?board=50.0"> ===&gt; Non-RM Projects</option>
+			<option value="?board=16.0"> =&gt; Resources</option>
+			<option value="?board=17.0"> ===&gt; Resource Database</option>
+			<option value="?board=31.0"> ===&gt; Resource Requests</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#6">Project: Remexos</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=38.0"> =&gt; Public Information</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#5">Featured Projects</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=36.0"> =&gt; Lexima Legends IV - Chaos Project</option>
+			<option value="?board=51.0"> =&gt; Valhira Online</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#3">General</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=18.0"> =&gt; Chat</option>
+			<option value="?board=19.0"> ===&gt; Express your Creativity</option>
+			<option value="?board=20.0"> ===&gt; Intelligent Debate</option>
+			<option value="?board=21.0"> ===&gt; Role Playing and Interactive Story Telling</option>
+			<option value="?board=32.0"> =&gt; Entertainment</option>
+			<option value="?board=22.0"> =&gt; Electronic and Computer Section</option>
+			<option value="?board=23.0"> ===&gt; Video Games</option>
+			<option value="?board=47.0"> ===&gt; C++/C# Development</option>
+			<option value="?board=24.0"> ===&gt; Programming / Scripting / Web</option>
+			<option value="?board=48.0"> =&gt; Academics</option>
+			<option value="?board=49.0"> ===&gt; Mathematics</option>
+			<option value="?board=25.0"> =&gt; Advertising</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="#4">S.P.A.M. and Forum Games</option>
+			<option value="" disabled="disabled">-----------------------------</option>
+			<option value="?board=26.0"> =&gt; S.P.A.M.</option>
+			<option value="?board=27.0"> ===&gt; Forum Games</option>
+		</select>&nbsp;
+		<input value="go" onclick="if (this.form.jumpto.options[this.form.jumpto.selectedIndex].value) window.location.href = 'http://forum.chaos-project.com/index.php' + this.form.jumpto.options[this.form.jumpto.selectedIndex].value;" type="button">
+	</form>
+</div></div><br>
+<a name="quickreply"></a>
+<div class="tborder">
+	<a href="javascript:swapQuickReply();"><img id="quickReplyExpand1" src="topic,7862.new_files/cat-collapseL.gif" alt="*" title="Shrink or expand the header." style="margin: 6px 0pt 0pt 4px;" align="left"></a>
+	<div id="cat-bgL">
+		<a href="javascript:swapQuickReply();"><img id="quickReplyExpand2" src="topic,7862.new_files/cat-collapseR.gif" alt="*" title="Shrink or expand the header." style="margin: 6px 4px 0pt 0pt;" align="right"></a>
+		<div id="cat-bgR" style="padding-right: 50px;">
+			<div class="catbg">Quick Reply</div>
+		</div>
+	</div>
+	<table class="bordercolor" border="0" cellpadding="4" cellspacing="1" width="100%">
+		<tbody><tr id="quickReplyOptions">
+			<td class="windowbg" valign="top" width="25%">With a <i>Quick-Reply</i> you can use bulletin board code and smileys as you would in a normal post, but much more conveniently.</td>
+			<td class="windowbg" align="center" width="75%">
+				<form action="http://forum.chaos-project.com/index.php?action=post2" method="post" accept-charset="UTF-8" name="postmodify" id="postmodify" onsubmit="submitonce(this);" style="margin: 0pt;">
+					<input name="topic" value="7862" type="hidden">
+					<input name="subject" value="Re: [XP] Transition Pack Add-On" type="hidden">
+					<input name="icon" value="xx" type="hidden">
+					<input name="notify" value="0" type="hidden">
+					<input name="goback" value="1" type="hidden">
+					<input name="num_replies" value="3" type="hidden">
+					<textarea cols="75" rows="7" style="width: 95%; height: 100px;" name="message" tabindex="1"></textarea><br>
+					<input name="post" value="Post" onclick="return submitThisOnce(this);" accesskey="s" tabindex="2" type="submit">
+					<input name="preview" value="Preview" onclick="return submitThisOnce(this);" accesskey="p" tabindex="4" type="submit">
+					<input name="sc" value="686a7fa5c886a0a4790b55da56abe719" type="hidden">
+					<input name="seqnum" value="4004616" type="hidden">
+				</form>
+			</td>
+		</tr>
+	</tbody></table>
+</div><br>
+		<div class="tborder">
+			<a href="#" onclick="shrinkHeaderSB(!current_header_sb); return false;"><img id="upshrink_sbL" src="topic,7862.new_files/cat-collapseL.gif" alt="*" title="Shrink or expand the header." style="margin: 6px 0pt 0pt 4px;" align="left"></a>
+			<div id="cat-bgL">
+				<a href="#" onclick="shrinkHeaderSB(!current_header_sb); return false;"><img id="upshrink_sbR" src="topic,7862.new_files/cat-collapseR.gif" alt="*" title="Shrink or expand the header." style="margin: 6px 4px 0pt 0pt;" align="right"></a>
+				<div id="cat-bgR" style="padding-right: 50px;">
+					<div class="catbg">Shoutbox</div>
+				</div>
+			</div>
+			<div id="upshrinkHeaderSB">
+				<table class="bordercolor" border="0" cellpadding="4" cellspacing="1" width="100%">
+					<tbody><tr>
+						<td class="titlebg" colspan="2">Latest Shouts</td>
+					</tr>
+					<tr>
+						<td rowspan="2" class="windowbg" align="center" valign="middle" width="20">
+							<a href="http://forum.chaos-project.com/index.php?action=shout_archive"><img src="topic,7862.new_files/online.gif" alt="View All"></a>
+						</td>
+						<td class="windowbg2" width="100%">
+			<span id="new_shout"></span>
+			<div id="shout_48407">
+			<b>Today</b> at 01:44:15 AM <a href="http://forum.chaos-project.com/index.php?action=profile;u=120">Aqua</a> -&nbsp;Fantaaaaaaaaaaaaaaaaaa~ 
+			</div>
+			<div id="shout_48406">
+			<b>Today</b> at 12:33:51 AM <a href="http://forum.chaos-project.com/index.php?action=profile;u=11">Fantasist</a> -&nbsp;@winkio: Yes it is! <img src="topic,7862.new_files/laugh.gif" alt=":D" border="0">
+ Just dropping by to check some stuff. (And properly archive all my 
+scripts and demos) Good to see the regular folk are still active ;D 
+			</div>
+			<div id="shout_48405">
+			<b>Today</b> at 12:31:11 AM <a href="http://forum.chaos-project.com/index.php?action=profile;u=844">The Niche</a>
+ -&nbsp;Okaaaaaaaay, so I have three different characters using 
+basically the same sprite. Two of them are more or less identical, 
+except one wears sunglasses and has obnoxiously green eyes when he takes
+ them off. Hmmm... 
+			</div>
+			<div id="shout_48404">
+			<b>Today</b> at 12:09:43 AM <a href="http://forum.chaos-project.com/index.php?action=profile;u=62">winkio</a> -&nbsp;It's Fantasist! <img src="topic,7862.new_files/laugh.gif" alt=":D" border="0"> <img src="topic,7862.new_files/laugh.gif" alt=":D" border="0"> <img src="topic,7862.new_files/laugh.gif" alt=":D" border="0"> <img src="topic,7862.new_files/laugh.gif" alt=":D" border="0"> <img src="topic,7862.new_files/laugh.gif" alt=":D" border="0"> 
+			</div>
+			<div id="shout_48403">
+			December 05, 2010, 11:07:49 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=11">Fantasist</a> -&nbsp;Hey Aqua and natmatt <img src="topic,7862.new_files/laugh.gif" alt=":D" border="0"> 
+			</div>
+			<div id="shout_48402">
+			December 05, 2010, 10:21:17 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=1">Blizzard</a> -&nbsp;The kind that leaves traumas. 
+			</div>
+			<div id="shout_48401">
+			December 05, 2010, 08:41:07 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=398">Tuggernuts</a> -&nbsp;The good kind. 
+			</div>
+			<div id="shout_48400">
+			December 05, 2010, 08:31:51 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=782">Cait Sith</a> -&nbsp;What kind of dark rituals and/or orgies have you been preforming in this shoutbox for the past few hours? 
+			</div>
+			<div id="shout_48399">
+			December 05, 2010, 06:28:49 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=398">Tuggernuts</a> -&nbsp;Oh yar. <img src="topic,7862.new_files/sarcasm.gif" alt="Sarcasm" border="0"> 
+			</div>
+			<div id="shout_48398">
+			December 05, 2010, 06:21:21 PM <a href="http://forum.chaos-project.com/index.php?action=profile;u=17">Ryex</a> -&nbsp;this should be appended to that last shout of mine <img src="topic,7862.new_files/sarcasm.gif" alt="Sarcasm" border="0"> 
+			</div>
+			<p><a href="http://forum.chaos-project.com/index.php?action=shout_archive">View All</a></p>			</td>
+					</tr>	<tr>
+						<td class="windowbg2" width="100%">
+		<form action="http://forum.chaos-project.com/index.php?action=shout" method="post">
+			<input value="http://forum.chaos-project.com/index.php/topic,7862.new.html?" name="qstr" type="hidden">
+			<input value="" name="email" type="hidden">
+				<input value="Fantasist" name="displayname" type="hidden">
+				<input value="11" name="memberID" type="hidden">
+			<input style="width: 99%;" value="Message" name="message" maxlength="500" onfocus="if (this.value == 'Message')this.value=''" type="text"><br>
+			<input name="submit" value="Shout" type="submit">
+			<input name="sc" value="686a7fa5c886a0a4790b55da56abe719" type="hidden">
+		</form>		</td>
+					</tr>	</tbody></table>
+			</div>
+		</div><br>
+		<center>
+			<a href="http://www.rpgrevolution.com/" target="_blank"><img src="topic,7862.new_files/button.gif" alt="RPG RPG Revolution" border="0" height="31" width="88"></a>
+			<a href="http://www.hbgames.org/" target="_blank"><img src="topic,7862.new_files/hb_affiliate.png" alt="HB Games" border="0" height="31" width="88"></a>
+			<a href="http://www.sandboxgamemaker.com/" target="_blank"><img src="topic,7862.new_files/30rwn4g.png" alt="Sandbox Game Maker" border="0" height="31" width="88"></a>
+			<a href="http://www.lovelessgames.com/" target="_blank"><img src="topic,7862.new_files/banner3.png" alt="Loveless Entertainment" border="0" height="31" width="88"></a>
+		</center>
+	
+	  </div>
+	 </div>
+	</div>
+	<div id="footer-bgL">
+     <div id="footer-bgR">
+      <div id="footer">
+        <div id="footerarea">
+			<span class="smalltext" style="color: rgb(238, 238, 238);">
+		<span class="smalltext" style="display: inline; visibility: visible; font-family: Verdana,Arial,sans-serif;"><a href="http://www.simplemachines.org/" title="Simple Machines Forum" target="_blank">Powered by SMF 1.1.12</a> | 
+<a href="http://www.simplemachines.org/about/copyright.php" title="Free Forum Software" target="_blank">SMF © 2006-2009, Simple Machines LLC</a>
+		</span>
+			<br>Theme by <a href="http://www.chaos-project.com/"><b>Blizzard</b></a></span>
+		<script language="JavaScript" type="text/javascript"><!-- // --><![CDATA[
+			window.addEventListener("load", smf_codeFix, false);
+			function smf_codeFix()
+			{
+				var codeFix = document.getElementsByTagName ? document.getElementsByTagName("div") : document.all.tags("div");
+
+				for (var i = 0; i < codeFix.length; i++)
+				{
+					if (codeFix[i].className == "code" && (codeFix[i].scrollWidth > codeFix[i].clientWidth || codeFix[i].clientWidth == 0))
+						codeFix[i].style.overflow = "scroll";
+				}
+			}
+		// ]]></script>
+		</div>
+	  </div>
+	 </div>
+	</div>
+	<div id="ajax_in_progress" style="display: none;">Loading...</div>
+	<div id="bottom-bgL">
+	 <div id="bottom-bgR">
+	  <div id="bottom">
+	  </div>
+	 </div>
+	</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="topic,7862.new_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8585496-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body></html>

@@ -1,0 +1,15 @@
+class Window_Base
+  
+  TILE_FLAG = "[TILE]"
+  # Wallpaper will be tiled if this word is found
+  # in the windowskin's filename.
+  
+  alias fts_tilebgm_skin windowskin=
+  def windowskin=(bmp)
+    fts_tilebgm_skin(bmp)
+    if @windowskin_name
+      self.stretch = !@windowskin_name.downcase.include?(TILE_FLAG.downcase)
+    end
+  end
+  
+end

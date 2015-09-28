@@ -1,0 +1,21 @@
+#==============================================================================
+# ** Animation Sheet Maker
+#------------------------------------------------------------------------------
+#
+#  Instructions:
+#
+#   - Put all the frames of one animation in a folder and paste it in this
+#      directory.
+#   - Include the names of the folders in quotes in the "Config.txt" file.
+#   - Run "MakeAnimSheet.exe" and wait.
+#
+#   NOTE: The contents of Config.txt will be directly loaded, so do not make
+#         errors of any sort. Include the folder names in the "List" array.
+#
+#   Example:
+#
+#         List = [ 'Animation1', 'folder2', 'anim' ]
+#==============================================================================
+
+
+List = ['test']

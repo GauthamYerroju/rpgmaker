@@ -1,0 +1,28 @@
+Some awesome coders out there have taken my work and made it better. Open-source, hell yeah!
+
+
+1. Transition Pack Add-Ons by ForeverZer0
+http://forum.chaos-project.com/index.php?topic=7862.0
+
+Adds many awesome effects to the transition pack
+
+
+2. Transition Pack Edit by ThallionDarkshine
+http://forum.chaos-project.com/index.php?topic=12655.0
+
+Features:
+- Extra-cool Transitions
+- Show next scene in the background during the transition
+
+
+3. Drago - Transition Pack by LiTTleDRAgo
+http://forum.chaos-project.com/index.php/topic,13488.0.html
+
+Features:
+- Remove screenshot.dll dependency
+- Added Frost and Pixelate transitions
+  "If you want to use them without lag, place WhiteFlute's Bitmap EX script above Drago - Core Engine"
+
+- Dependencies:
+  - Drago - Core Engine
+  - For lag-free Frost and Pixelate effects: WhiteFlute's Bitmap EX script
